@@ -1,0 +1,18 @@
+# Idées pour plus tard
+
+Les idées ne sont pas des exigences. Elles sont consignées ici pour ne pas être perdues, et passent dans le besoin quand elles sont retenues.
+
+| ID | Idée | Origine | Statut |
+|---|---|---|---|
+| ID-01 | Haut-parleurs synchronisés avec la musique : ambiance lumineuse selon le rythme. | Idée initiale | À étudier |
+| ID-02 | Autre API événementielle que Twitch. | Idée initiale | À étudier |
+| ID-03 | Étoile filante : séquence spatiale qui se déplace sur plusieurs étoiles d'un secteur. | Échange sur les rubans de LED | À étudier |
+| ID-04 | Séquence « Économie d'énergie » : au bout d'un certain temps, extinction des étoiles si personne n'intervient (voir QO-13). | Cas d'usage UC-CON-01 | À étudier |
+| ID-05 | Séquences de diagnostic jouées par le Système pour voir en direct ce qui se passe (ex. signaler une étoile injoignable). | Échange sur le Système | À étudier |
+| ID-06 | Signaler la perte de communication avec une étoile par une séquence particulière, visible uniquement en mode diagnostic, pour déboguer vite (voir QO-18, QO-19). | Échange sur la perte de communication | À étudier |
+| ID-07 | Équipes et nations (France, Mali, Karmine Corp, PSG, Man Utd) : pour chacune, une **réaction** (flash temporaire) et une **ambiance** (soirée aux couleurs de l'équipe). | Échange du 2 novembre | À étudier |
+| ID-08 | Son associé à une réaction (chant, jingle) : à voir si Starlight le gère ou si un autre système le joue (voir QO-33). | Échange du 2 novembre | À étudier |
+| ID-09 | Séquence d'entrée facultative d'une ambiance : jouée par le pilote à l'activation de l'ambiance, avant qu'elle ne s'installe ; invisible du reste du système (voir QO-36, QO-38). | Échange du 2 novembre | À étudier |
+| ID-10 | Son, en deux cas : (1) en mode Stream, un son synchronisé avec une réaction (lié à Starlight, probablement par la chaîne audio du stream) ; (2) en mode Lounge, plusieurs haut-parleurs synchronisés entre eux (indépendant de Starlight au départ). **Constats (4 novembre)** : ne pas écrire la synchronisation soi-même ; pistes existantes : Snapcast (libre, serveur + clients, source `airplay`, pilotable en JSON-RPC), Music Assistant avec AirPlay, Auracast. Le Bluetooth depuis un PC est à éviter pour synchroniser plusieurs enceintes. Matériel actuel : Philips TAB4000 (barre de son, Bluetooth seul d'après un revendeur, ni AUX ni optique) et JBL Flip 4 (Bluetooth, entrée AUX, Connect+ seulement entre modèles Connect+). Plus tard, une réaction pourrait suivre le rythme d'un son (le pilote suit le rythme). Hypothèse d'architecture : un Raspberry Pi comme serveur audio (récepteur AirPlay pour l'iPhone, Snapcast), le PC Windows comme client (client Windows existant via WASAPI) ; enceintes de bureau filaires. **Points ouverts** : serveur Snapcast sous Windows non confirmé ; capter le son du PC comme source non résolu ; latence Bluetooth pour la TAB4000 non vérifiée ; Chromecast sans solution trouvée. Dire « serveur audio » (et non « pilote ») pour ne pas confondre avec le pilote des étoiles. | Échange sur le son (4 novembre) | À étudier (reporté) |
+| ID-11 | Faire évoluer les rôles : permettre à d'autres acteurs (par exemple le Streamer) d'éditer des séquences, des ambiances ou des réactions ; l'aperçu les suivrait. À garder possible dans la conception (droits non figés dans le code). | Échange du 6 novembre | À étudier (plus tard) |
+| ID-12 | Saisir le rythme d'une séquence en le frappant sur une touche du clavier (par exemple le chant « Karmine »), au lieu de régler chaque durée à la main. | Échange du 6 novembre | À étudier (plus tard) |
