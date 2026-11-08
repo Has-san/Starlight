@@ -15,7 +15,7 @@
 - Une ou plusieurs **désignations**. Chacune vise une étoile ou un secteur entier et dit ce qu'il fait :
   - soit un **état fixe** (couleur, intensité), décrit à l'intention : le pilote le traduit selon les capacités de chaque étoile (QO-10) ;
   - soit une **séquence en boucle**, exécutée localement par le pilote.
-- Les étoiles du périmètre du mode que l'ambiance ne désigne pas sont **éteintes**.
+- Les étoiles des secteurs du mode que l'ambiance ne désigne pas sont **éteintes**.
 - L'ambiance **« Off »** est prédéfinie et protégée : l'Administrateur ne peut ni la modifier ni la supprimer (QO-17).
 
 ## Résolution des désignations

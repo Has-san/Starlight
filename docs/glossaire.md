@@ -12,7 +12,7 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 | **Étoile** | `star` | Source de lumière individuelle et pilotable du système, identifiée de façon unique. Un ruban de LED est une étoile. Les capacités peuvent différer d'une étoile à l'autre : seul le pilote les connaît. L'étoile est annoncée par le pilote, avec un identifiant stable ; l'Administrateur ne la crée ni ne la supprime. |
 | **Pilote** | `driver` | Élément qui commande les étoiles : il connaît leurs capacités et décide comment jouer sur chacune une séquence ou une ambiance. Il ne connaît pas les secteurs : Starlight ne lui transmet que les étoiles concernées. |
 | **Secteur** | `sector` | Groupe prédéfini d'étoiles. Sert à l'Administrateur et au Streamer à désigner plusieurs étoiles d'un coup. Une étoile peut appartenir à plusieurs secteurs ; un secteur ne contient pas d'autre secteur. |
-| **Mode** | `mode` (périmètre : `scope`) | Manière de fonctionner de Starlight : Lounge ou Stream. Chaque mode a son **périmètre** : les étoiles et secteurs qu'il utilise. |
+| **Mode** | `mode` | Manière de fonctionner de Starlight : Lounge ou Stream. Chaque mode a ses **secteurs** : ceux qu'il utilise. Une étoile seule entre dans un mode par un secteur d'une étoile. |
 | **Ambiance** | `ambience` | Configuration des étoiles : pour chaque étoile ou secteur désigné, un état fixe ou une séquence en boucle ; les étoiles non désignées sont éteintes. |
 | **Séquence** | `sequence` | Jeu de couleurs, d'intensités, de clignotements et de temporisations des étoiles. Jouée une fois, ou en boucle (donc durable). |
 | **Séquence d'entrée** | `intro_sequence` | Séquence facultative jouée par le pilote quand une ambiance s'active, avant qu'elle ne s'installe. Interne au pilote : ni file, ni priorité, invisible des autres éléments du système. |
@@ -36,7 +36,7 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 - En mode Stream, le Convive ne peut pas agir : Twitch et le Streamer ont la main.
 - L'Administrateur peut toujours prendre la main, quel que soit le mode.
 - Toute modification de configuration passe par un aperçu sur les étoiles, puis par une validation ou une annulation ; pendant l'aperçu, la file de réactions est en pause et l'Administrateur est alerté quand des réactions attendent.
-- Starlight n'envoie au pilote que les étoiles touchées : celles que l'ambiance (ou la séquence) désigne **et** qui appartiennent au périmètre du mode actif. Exceptions : le test manuel de l'Administrateur ignore le périmètre, et l'ambiance « Off » éteint toutes les étoiles. Si rien n'est en commun, rien ne s'allume et le journal l'indique.
+- Starlight n'envoie au pilote que les étoiles touchées : celles que l'ambiance (ou la séquence) désigne **et** qui appartiennent à un secteur du mode actif. Exceptions : le test manuel de l'Administrateur ignore les secteurs du mode, et l'ambiance « Off » éteint toutes les étoiles. Si rien n'est en commun, rien ne s'allume et le journal l'indique.
 
 ## Rôles
 

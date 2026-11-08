@@ -37,7 +37,7 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 - Les séquences sont éditées par aperçu, puis validation ou annulation (UC-ADM-11).
 - **Une séquence en boucle est durable** : elle sert aux ambiances, jamais aux réactions, qui sont temporaires.
 - **Une séquence utilisée dans une réaction est jouée une fois** et sa durée respecte la durée maximale d'une réaction (environ 10 secondes, voir QO-25). Cette durée est vérifiée à la validation de la séquence et de la réaction (UC-ADM-12).
-- **Essai explicite** : l'Administrateur peut jouer une séquence sur une étoile ou un secteur de son choix, hors périmètre du mode, même si l'aperçu est désactivé. L'essai s'arrête à la fin de la séquence, à la durée maximale pour une boucle, ou quand l'Administrateur l'arrête.
+- **Essai explicite** : l'Administrateur peut jouer une séquence sur une étoile ou un secteur de son choix, hors des secteurs du mode, même si l'aperçu est désactivé. L'essai s'arrête à la fin de la séquence, à la durée maximale pour une boucle, ou quand l'Administrateur l'arrête.
 - Un secteur ou une étoile indisponible peut être visé ; il joue la séquence quand il est disponible (voir QO-55 pour les ambiances).
 
 ## Scénarios alternatifs

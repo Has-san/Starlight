@@ -5,7 +5,7 @@
 | Champ | Contenu |
 |---|---|
 | **Acteur principal** | Administrateur |
-| **Objectif** | Regrouper des étoiles en secteurs pour pouvoir les désigner d'un coup (dans une ambiance, une séquence ou le périmètre d'un mode). |
+| **Objectif** | Regrouper des étoiles en secteurs pour pouvoir les désigner d'un coup (dans une ambiance, une séquence ou un mode). |
 | **Déclencheur** | L'Administrateur ouvre la configuration des secteurs. |
 | **Préconditions** | En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). En mode Lounge, aucune condition. |
 
@@ -31,9 +31,9 @@ Comme toute configuration, les modifications passent par un aperçu, puis une va
 ## Scénarios alternatifs
 
 - **A1, nom déjà utilisé** : la création ou le changement de nom est refusé, rien n'est enregistré.
-- **A2, modifier un secteur** : l'Administrateur peut changer le nom et ajouter ou retirer des étoiles. La modification est consignée (acteur, secteur, ancien et nouvel état). Les ambiances, séquences et périmètres qui désignent ce secteur suivent sa nouvelle composition (voir QO-52 pour le moment où cela prend effet).
+- **A2, modifier un secteur** : l'Administrateur peut changer le nom et ajouter ou retirer des étoiles. La modification est consignée (acteur, secteur, ancien et nouvel état). Les ambiances, séquences et modes qui désignent ce secteur suivent sa nouvelle composition (voir QO-52 pour le moment où cela prend effet).
 - **A3, supprimer un secteur désigné par une ambiance, une séquence ou une réaction** : refusé. L'Administrateur doit d'abord modifier ce qui l'utilise (voir QO-46).
-- **A4, supprimer un secteur qui n'est contenu que dans le périmètre d'un mode** : autorisé. Le secteur est retiré de ce périmètre et la suppression est consignée. Si un mode se retrouve avec un périmètre vide, l'alerte « mode au périmètre vide » s'applique.
+- **A4, supprimer un secteur qui n'est utilisé que par des modes** : autorisé. Le secteur est retiré de ces modes et la suppression est consignée. Si un mode se retrouve sans secteur, l'alerte « mode sans secteur » s'applique.
 - **A5, configuration verrouillée en mode Stream** : toute création, modification ou suppression est refusée. L'Administrateur peut lever le verrou (UC-ADM-09).
 - **A6, alertes** : Starlight alerte l'Administrateur, sans le bloquer, quand un secteur n'a aucune étoile. L'alerte est affichée dans la configuration et consignée, à chaque modification de la configuration et au démarrage (les autres alertes sont dans UC-ADM-01 et UC-ADM-10).
 

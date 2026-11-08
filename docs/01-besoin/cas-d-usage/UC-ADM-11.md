@@ -23,7 +23,7 @@ Aperçu désactivé : les étapes 2 et 3 du scénario n'ont pas lieu, donc les �
 ## Scénario nominal
 
 1. L'Administrateur commence à modifier la configuration : une session d'édition s'ouvre.
-2. À chaque modification dont l'effet est visible, Starlight montre l'**aperçu** sur les étoiles concernées, sans tenir compte du périmètre du mode (comme un test manuel).
+2. À chaque modification dont l'effet est visible, Starlight montre l'**aperçu** sur les étoiles concernées, sans tenir compte des secteurs du mode (comme un test manuel).
 3. Pendant l'aperçu, la **file de réactions est en pause** et aucune réaction n'est perdue. Starlight alerte l'Administrateur quand des réactions attendent, en indiquant leur nombre.
 4. L'Administrateur peut poursuivre ses modifications (les étapes 2 et 3 se répètent).
 5. L'Administrateur **valide**. Starlight vérifie la configuration, l'enregistre en une fois et l'applique au système, puis consigne les modifications dans le journal (acteur, ancien et nouvel état). L'affichage suit tout de suite la configuration validée et la file reprend.
@@ -37,7 +37,7 @@ Aperçu désactivé : les étapes 2 et 3 du scénario n'ont pas lieu, donc les �
 - Une modification sans effet visible (renommer une étoile, associer une réaction à un événement) n'a pas d'aperçu, mais passe par la même validation.
 - **Même avec l'aperçu désactivé**, l'Administrateur peut lancer un essai explicite d'une séquence sur une étoile ou un secteur de son choix (voir UC-ADM-04).
 - **Une seule session d'édition à la fois** : une seule interface sert l'Administrateur et le Streamer pour l'instant.
-- Le choix du Streamer pour le périmètre du mode Stream (UC-STR-05) n'utilise pas ce mécanisme : il s'applique directement, sans aperçu et sans suspendre la file.
+- Le choix du Streamer pour les secteurs du mode Stream (UC-STR-05) n'utilise pas ce mécanisme : il s'applique directement, sans aperçu et sans suspendre la file.
 - En mode Stream, un aperçu agit sur les vraies étoiles, visibles des spectateurs : c'est la raison d'être du verrou de UC-ADM-09.
 
 ## Scénarios alternatifs

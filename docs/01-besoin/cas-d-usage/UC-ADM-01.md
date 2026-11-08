@@ -30,7 +30,7 @@ La liste montre, pour chaque étoile :
 
 - Les modifications passent par un aperçu, puis une validation ou une annulation (UC-ADM-11).
 - **Une étoile indisponible reste dans la liste**, signalée comme indisponible. Le retrait d'une étoile définitivement absente n'est pas prévu pour l'instant (voir QO-47).
-- **Une nouvelle étoile annoncée par le pilote** apparaît dans la liste avec l'identifiant pour nom. Si elle ne fait partie d'aucun périmètre de mode (ni directement, ni par un secteur), l'Administrateur en est alerté (alerte non bloquante, affichée dans la configuration et consignée ; voir QO-48).
+- **Une nouvelle étoile annoncée par le pilote** apparaît dans la liste avec l'identifiant pour nom. Si elle ne fait partie d'aucun secteur d'un mode, l'Administrateur en est alerté (alerte non bloquante, affichée dans la configuration et consignée ; voir QO-48).
 - Une étoile peut appartenir à plusieurs secteurs ; l'appartenance se règle dans UC-ADM-02.
 
 ## Scénarios alternatifs
