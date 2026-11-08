@@ -38,3 +38,7 @@ desktop.ini
 ~$*
 *.bkp
 *.dtmp
+
+# --- Expériences : jamais de secrets ni de données de spectateurs ---
+experiments/**/.tokens.json
+experiments/**/out/
