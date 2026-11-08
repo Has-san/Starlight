@@ -24,7 +24,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-ADM-07](UC-ADM-07.md) | Associer une réaction à un type d'événement | Validé |
 | [UC-ADM-08](UC-ADM-08.md) | Connecter Starlight à Twitch | Validé |
 | UC-ADM-09 | Verrouiller ou autoriser la configuration pendant le Stream | À rédiger |
-| UC-ADM-10 | Définir les secteurs d'un mode (Lounge, Stream) | À rédiger |
+| [UC-ADM-10](UC-ADM-10.md) | Définir les secteurs d'un mode (Lounge, Stream) | Brouillon |
 | [UC-ADM-11](UC-ADM-11.md) | Valider ou annuler une configuration en cours (aperçu) | Validé |
 | UC-ADM-12 | Gérer les réactions (créer, modifier, supprimer) | À rédiger |
 | UC-SYS-01 | Économie d'énergie (mode Lounge uniquement) | À rédiger |
