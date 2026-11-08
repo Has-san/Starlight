@@ -1,6 +1,6 @@
 # UC-ADM-10 : Définir les secteurs d'un mode
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
