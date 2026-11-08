@@ -39,7 +39,7 @@
 
 En mode Lounge, le même bouton se réduit à UC-CON-02 (il n'y a rien à arrêter).
 
-## Scénarios alternatifs *(proposés, à valider)*
+## Scénarios alternatifs
 
 - **A1, mode Lounge actif** : pour une demande d'arrêt ou de vidage, rien à faire (aucune réaction en mode Lounge) ; le bouton OFF suit UC-CON-02.
 - **A2, rien en cours ni en attente** : aucun changement (pour OFF : l'ambiance « Off » est activée).
