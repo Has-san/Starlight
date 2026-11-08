@@ -1,6 +1,6 @@
 # UC-STR-05 : Choisir les secteurs du mode Stream
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
