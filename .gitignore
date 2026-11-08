@@ -1,0 +1,40 @@
+# --- Secrets et configuration locale (ne jamais versionner) ---
+.env
+.env.*
+!.env.example
+CONFIG*.txt
+*.secret
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- IDE / éditeurs ---
+.idea/
+.vscode/
+*.swp
+
+# --- Firmware (PlatformIO / Arduino) ---
+.pio/
+*.bin
+*.elf
+*.hex
+
+# --- Systèmes ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Fichiers temporaires Office / draw.io ---
+~$*
+*.bkp
+*.dtmp
