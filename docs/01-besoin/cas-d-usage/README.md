@@ -12,7 +12,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-STR-01](UC-STR-01.md) | Activer une ambiance | Validé |
 | [UC-STR-02](UC-STR-02.md) | Déclencher manuellement une réaction | Validé |
 | [UC-STR-03](UC-STR-03.md) | Arrêter les réactions (vider la file, arrêter la réaction en cours, bouton OFF) | Validé |
-| [UC-STR-04](UC-STR-04.md) | Interdire ou autoriser des types d'événements Twitch (un interrupteur par type) | À valider |
+| [UC-STR-04](UC-STR-04.md) | Interdire ou autoriser des types d'événements Twitch (un interrupteur par type) | Validé |
 | UC-STR-05 | Définir le périmètre du mode Stream | À rédiger |
 | [UC-TWI-01](UC-TWI-01.md) | Émettre un événement entraînant une réaction | Validé |
 | [UC-ADM-01](UC-ADM-01.md) | Consulter et nommer les étoiles (annoncées par le pilote) | Validé |

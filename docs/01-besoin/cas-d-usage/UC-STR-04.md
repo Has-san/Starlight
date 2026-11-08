@@ -1,6 +1,6 @@
 # UC-STR-04 : Interdire ou autoriser des types d'événements Twitch
 
-*Statut : à valider (modifié le 8 novembre : interrupteur par type d'événement).*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
