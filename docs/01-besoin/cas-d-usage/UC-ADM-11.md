@@ -1,6 +1,6 @@
 # UC-ADM-11 : Valider ou annuler une configuration en cours (aperçu)
 
-*Statut : à valider (modifié le 8 novembre : interrupteur d'aperçu personnel, ouvert au Streamer).*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|

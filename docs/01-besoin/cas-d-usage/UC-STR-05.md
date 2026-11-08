@@ -1,6 +1,6 @@
 # UC-STR-05 : Choisir les secteurs du mode Stream
 
-*Statut : à valider (modifié le 8 novembre : aperçu ouvert au Streamer).*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
