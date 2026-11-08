@@ -4,7 +4,7 @@
 
 | Champ | Contenu |
 |---|---|
-| **Acteur principal** | Streamer |
+| **Acteur principal** | Streamer (l'Administrateur peut faire exactement les mêmes actions ; si un rôle devait en avoir davantage, ce serait l'Administrateur) |
 | **Objectif** | Reprendre la main quand les réactions s'accumulent ou ne sont plus voulues. |
 | **Déclencheur** | Le Streamer demande l'une des trois actions : vider la file, arrêter la réaction en cours, ou utiliser le bouton OFF. |
 | **Préconditions** | Starlight est en mode Stream. |
@@ -17,11 +17,15 @@
 | **Arrêter la réaction en cours** | Arrête immédiatement la réaction en cours. La file n'est pas touchée. |
 | **Bouton OFF** | Arrête la réaction en cours, vide la file, puis active l'ambiance « Off ». |
 
+## Voir la file
+
+Le Streamer (dans sa régie) et l'Administrateur voient le contenu de la file d'attente : pour chaque réaction en attente, son nom, son origine (événement Twitch ou demande manuelle) et son rang. Cette vue précède toute suppression.
+
 ## Scénario nominal : vider la file
 
-1. Le Streamer demande de vider la file d'attente.
+1. Le Streamer consulte la file puis demande de la vider.
 2. Starlight supprime toutes les réactions en attente.
-3. Starlight consigne l'action dans le journal : acteur (le Streamer), nombre de réactions supprimées, origine de chacune (événement Twitch ou demande manuelle).
+3. Starlight consigne l'action dans le journal : acteur (Streamer ou Administrateur), nombre de réactions supprimées, origine de chacune (événement Twitch ou demande manuelle).
 4. La réaction en cours se poursuit ; à sa fin, Starlight affiche l'ambiance courante.
 
 ## Scénario nominal : arrêter la réaction en cours
@@ -43,13 +47,13 @@ En mode Lounge, le même bouton se réduit à UC-CON-02 (il n'y a rien à arrêt
 
 - **A1, mode Lounge actif** : pour une demande d'arrêt ou de vidage, rien à faire (aucune réaction en mode Lounge) ; le bouton OFF suit UC-CON-02.
 - **A2, rien en cours ni en attente** : aucun changement (pour OFF : l'ambiance « Off » est activée).
-- **A3, nouveaux événements après un vidage ou un OFF** : ils sont traités normalement. Pour un silence complet, le Streamer interdit aussi les événements (UC-STR-04).
+- **A3, nouveaux événements après un vidage ou un OFF** : ils sont traités normalement. Pour un silence complet, le Streamer interdit aussi les types d'événements (UC-STR-04).
 - **A4, suppression volontaire** : les réactions supprimées ne sont pas jouées plus tard. Cette perte est voulue par le Streamer et reste visible dans le journal.
 
 ## Postconditions
 
 - Après un vidage, la file est vide ; après un arrêt, la réaction en cours n'est plus jouée ; après OFF, l'ambiance courante est « Off ».
-- Le journal indique l'acteur et ce qui a été arrêté ou supprimé.
+- Le journal indique l'acteur et ce qui a été arrêté ou supprimé : toutes les actions de ce cas d'usage sont tracées.
 
 ## Questions liées
 
