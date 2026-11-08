@@ -6,4 +6,4 @@ Système d'éclairage pilotable : chaque source lumineuse est une « étoile »,
 
 ## Licence
 
-MIT (fichier `LICENSE` à venir).
+Distribué sous licence MIT : voir [`LICENSE`](LICENSE).
