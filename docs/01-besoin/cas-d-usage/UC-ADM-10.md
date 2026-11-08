@@ -27,7 +27,7 @@
 
 ## Pendant un live
 
-L'Administrateur peut modifier les secteurs du mode Stream pendant un live. Le Streamer en est prévenu dans sa régie (qui a changé quoi). Si le Streamer a une session d'édition ouverte, l'Administrateur reçoit « une édition est déjà en cours » (UC-ADM-11).
+L'Administrateur peut modifier les secteurs du mode Stream pendant un live. Si la **notification de changement** est activée, le Streamer en est prévenu dans sa régie (qui a changé quoi). Le Streamer active ou coupe cette notification à tout moment, depuis sa régie ; valeur par défaut : activée. Le changement est consigné au journal dans tous les cas. Si le Streamer a une session d'édition ouverte, l'Administrateur reçoit « une édition est déjà en cours » (UC-ADM-11).
 
 ## Scénarios alternatifs
 
