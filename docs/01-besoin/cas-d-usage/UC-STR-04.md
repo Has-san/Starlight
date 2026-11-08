@@ -33,9 +33,15 @@
 3. Les événements ignorés ne sont pas rejoués : ils seraient périmés (voir QO-41).
 4. Starlight consigne dans le journal le changement et le nombre d'événements ignorés pour ce type.
 
-## Fin de session
+## Début de session
 
-À la fin du live (sortie du mode Stream), si au moins un type est interdit, Starlight en informe le Streamer, lui présente l'état des interrupteurs et lui demande s'il veut **les garder** ou **tout réinitialiser** (tout autoriser). Ainsi rien ne reste interdit par surprise au stream suivant.
+Les interrupteurs restent tels quels d'un live à l'autre : rien n'est réinitialisé automatiquement.
+
+À l'entrée en mode Stream, la régie du Streamer affiche un **récapitulatif** : la liste de tous les types d'événements avec leur état (autorisé ou interdit), les types interdits étant mis en évidence. Depuis ce récapitulatif, le Streamer peut modifier chaque interrupteur ou utiliser « tout autoriser ».
+
+- L'affichage est **non bloquant** : il n'empêche ni les ambiances, ni les réactions manuelles, et les événements sont traités selon l'état enregistré sans attendre.
+- La **confirmation est obligatoire** : le récapitulatif reste affiché, avec une alerte persistante, tant que le Streamer n'a pas confirmé (« j'ai vu l'état »). La confirmation est consignée dans le journal (acteur, moment).
+- Si la régie n'est pas ouverte à l'entrée en mode Stream, le récapitulatif l'attend ; le journal indique « non confirmé » tant qu'il n'y a pas eu de confirmation.
 
 ## Limite à connaître
 
@@ -45,7 +51,7 @@ Seuls les événements payés en points de chaîne peuvent être bloqués en amo
 
 - **A1, mode Lounge actif** : la demande est ignorée (les événements Twitch sont déjà ignorés en mode Lounge).
 - **A2, déjà dans l'état demandé** : aucun changement.
-- **A3, sortie du mode Stream** : voir « Fin de session ». Si le Streamer ne répond pas, voir QO-57.
+- **A3, entrée en mode Stream** : voir « Début de session » (récapitulatif et confirmation, QO-57).
 - **A4, échanges de points de chaîne reçus malgré l'interdiction** : leur traitement (annulation avec remboursement) dépend de l'expérience EXP-01 et de QO-42.
 
 ## Postconditions
