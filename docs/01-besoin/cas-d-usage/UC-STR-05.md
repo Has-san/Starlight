@@ -1,6 +1,6 @@
 # UC-STR-05 : Choisir les secteurs du mode Stream
 
-*Statut : validé.*
+*Statut : à valider (modifié le 8 novembre : aperçu ouvert au Streamer).*
 
 | Champ | Contenu |
 |---|---|
@@ -13,9 +13,11 @@
 
 1. Le Streamer ouvre la liste des secteurs. Tous les secteurs y figurent (aucun filtre pour l'instant, voir QO-58) ; ceux qui sont utilisés par le mode Stream sont marqués.
 2. Il ajoute ou retire un ou plusieurs secteurs.
-3. Le changement s'applique **tout de suite**, sans aperçu ni validation et sans mettre la file en pause (UC-ADM-11 n'est pas utilisé).
-4. Starlight consigne le changement dans le journal : acteur, secteurs avant et après.
-5. Starlight recalcule les étoiles envoyées au pilote (désignées par l'ambiance ET dans un secteur du mode) :
+3. Selon l'interrupteur d'aperçu du Streamer (activé par défaut, modifiable à tout moment, voir UC-ADM-11) :
+   - **aperçu activé** : le résultat s'affiche sur les étoiles, la file est en pause, puis le Streamer valide ou annule ;
+   - **aperçu désactivé** : le changement s'applique **tout de suite**, sans validation et sans mettre la file en pause.
+4. À la validation (ou tout de suite sans aperçu), Starlight consigne le changement dans le journal : acteur, secteurs avant et après.
+5. Une fois le changement appliqué, Starlight recalcule les étoiles envoyées au pilote (désignées par l'ambiance ET dans un secteur du mode) :
    - les étoiles qui sortent du mode sont **éteintes tout de suite**, y compris si une réaction est en cours (seules ces étoiles sont touchées, la réaction continue sur les autres) ;
    - les étoiles qui entrent dans le mode affichent l'ambiance courante.
 
@@ -26,7 +28,8 @@
 - **A3, aucun secteur choisi** : autorisé. Rien ne s'allume, l'alerte « mode sans secteur » s'affiche et le journal l'indique.
 - **A4, étoile dans plusieurs secteurs** : elle reste utilisée tant qu'elle appartient à au moins un secteur du mode.
 - **A5, secteur supprimé par l'Administrateur** : il est retiré du mode (UC-ADM-02, A4) ; la suppression est consignée.
-- **A6, deux changements successifs** : le dernier s'applique, l'acteur est consigné à chaque fois.
+- **A6, annulation de l'aperçu** : rien n'est enregistré, l'affichage revient à l'ambiance courante et la file reprend (UC-ADM-11).
+- **A6 bis, deux changements successifs** : le dernier s'applique, l'acteur est consigné à chaque fois.
 - **A7, verrou de configuration** : le verrou de UC-ADM-09 ne s'applique pas au Streamer pour ce choix.
 - **A8, étoile indisponible** : elle reste dans le mode ; à son retour elle reprend l'ambiance courante (QO-55).
 
@@ -38,4 +41,4 @@
 
 ## Questions liées
 
-QO-48, QO-53, QO-55, QO-58
+QO-48, QO-53, QO-54, QO-55, QO-58

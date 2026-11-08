@@ -13,7 +13,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-STR-02](UC-STR-02.md) | Déclencher manuellement une réaction | Validé |
 | [UC-STR-03](UC-STR-03.md) | Arrêter les réactions (vider la file, arrêter la réaction en cours, bouton OFF) | Validé |
 | [UC-STR-04](UC-STR-04.md) | Interdire ou autoriser des types d'événements Twitch (un interrupteur par type) | Validé |
-| [UC-STR-05](UC-STR-05.md) | Choisir les secteurs du mode Stream | Validé |
+| [UC-STR-05](UC-STR-05.md) | Choisir les secteurs du mode Stream | À valider |
 | [UC-TWI-01](UC-TWI-01.md) | Émettre un événement entraînant une réaction | Validé |
 | [UC-ADM-01](UC-ADM-01.md) | Consulter et nommer les étoiles (annoncées par le pilote) | Validé |
 | [UC-ADM-02](UC-ADM-02.md) | Gérer les secteurs (créer, modifier, supprimer) | Validé |
@@ -25,7 +25,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-ADM-08](UC-ADM-08.md) | Connecter Starlight à Twitch | Validé |
 | UC-ADM-09 | Verrouiller ou autoriser la configuration pendant le Stream | À rédiger |
 | UC-ADM-10 | Définir les secteurs d'un mode (Lounge, Stream) | À rédiger |
-| [UC-ADM-11](UC-ADM-11.md) | Valider ou annuler une configuration en cours (aperçu) | Validé |
+| [UC-ADM-11](UC-ADM-11.md) | Valider ou annuler une configuration en cours (aperçu) | À valider |
 | UC-ADM-12 | Gérer les réactions (créer, modifier, supprimer) | À rédiger |
 | UC-SYS-01 | Économie d'énergie (mode Lounge uniquement) | À rédiger |
 | UC-SYS-02 | Séquence d'ouverture du mode Stream | À rédiger |
