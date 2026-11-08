@@ -8,7 +8,7 @@ Les dossiers numérotés suivent les phases du projet, dans l'ordre de lecture.
 
 | Dossier | Contenu |
 |---|---|
-| [`01-besoin/`](01-besoin/) | Expression du besoin : acteurs, cas d'utilisation |
+| [`01-besoin/`](01-besoin/) | Expression du besoin : acteurs, cas d'usage |
 | [`02-specifications/`](02-specifications/) | Exigences fonctionnelles et non fonctionnelles |
 | [`03-architecture/`](03-architecture/) | Architecture logicielle et matérielle |
 | [`04-conception/`](04-conception/) | Conception détaillée des modules |
@@ -24,5 +24,5 @@ Documents transverses, à la racine de `docs/` :
 ## Conventions
 
 - Identifiants stables, jamais réutilisés : `UC-CON-01`, `QO-12`, `ADR-0001`, `EXP-01`.
-- Un fichier par cas d'utilisation, nommé par son identifiant (`UC-STR-02.md`).
+- Un fichier par cas d'usage, nommé par son identifiant (`UC-STR-02.md`).
 - Schémas au format `.drawio.svg`, à côté du document qu'ils illustrent : GitHub les affiche, draw.io les édite.
