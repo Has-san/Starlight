@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Convive sélectionne une ambiance via un actionneur (bouton poussoir, téléphone, télécommande : à définir, voir QO-11). |
 | **Préconditions** | Starlight est en mode Lounge. |
 
+Schéma : [UC-CON-01.drawio.svg](UC-CON-01.drawio.svg).
+
 ## Scénario nominal
 
 1. Le Convive sélectionne une ambiance disponible.

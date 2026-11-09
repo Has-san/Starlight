@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer modifie la liste des secteurs du mode Stream depuis sa régie. |
 | **Préconditions** | Starlight est en mode Stream. Au moins un secteur existe. |
 
+Schéma : [UC-STR-05.drawio.svg](UC-STR-05.drawio.svg).
+
 ## Scénario nominal
 
 1. Le Streamer ouvre la liste des secteurs. Tous les secteurs y figurent (aucun filtre pour l'instant, voir QO-58) ; ceux qui sont utilisés par le mode Stream sont marqués.

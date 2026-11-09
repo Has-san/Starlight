@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur ouvre la liste des étoiles. |
 | **Préconditions** | Le pilote a annoncé ses étoiles à Starlight. Pour **nommer** en mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09) ; **consulter** reste toujours possible. |
 
+Schéma : [UC-ADM-01.drawio.svg](UC-ADM-01.drawio.svg).
+
 ## Principe
 
 Les étoiles viennent du pilote : il annonce à Starlight le matériel qu'il embarque, avec un **identifiant stable** pour chaque étoile. Starlight ne crée ni ne supprime d'étoile. Ajouter du matériel demande du développement du pilote.

@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur ouvre la configuration d'un mode et modifie ses secteurs. |
 | **Préconditions** | Au moins un secteur existe. En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). |
 
+Schéma : [UC-ADM-10.drawio.svg](UC-ADM-10.drawio.svg).
+
 ## Principe
 
 - Un mode a des secteurs ; un secteur ne connaît pas les modes (voir UC-ADM-02).

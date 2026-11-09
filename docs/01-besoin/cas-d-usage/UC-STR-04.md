@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer interdit ou autorise un type d'événement, ou utilise « tout interdire » / « tout autoriser ». |
 | **Préconditions** | Starlight est en mode Stream. |
 
+Schéma : [UC-STR-04.drawio.svg](UC-STR-04.drawio.svg).
+
 ## Principe
 
 - Chaque type d'événement connu de Starlight (voir UC-ADM-07) a un **interrupteur** : autorisé ou interdit. Exemples : follow, abonnement, bits, raid, et **chaque récompense de points de chaîne** (une récompense est un type d'événement).

@@ -10,6 +10,8 @@
 | **Déclencheur** | L'Administrateur demande la connexion à Twitch. |
 | **Préconditions** | Twitch est joignable. Le propriétaire de la chaîne peut se connecter à son compte Twitch. |
 
+Schéma : [UC-ADM-08.drawio.svg](UC-ADM-08.drawio.svg).
+
 ## Droits demandés
 
 - **Lecture (obligatoire)** : recevoir les événements de la chaîne et lister ses récompenses.

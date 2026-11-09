@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer sélectionne une ambiance via un actionneur (voir QO-11). |
 | **Préconditions** | Starlight est en mode Stream. |
 
+Schéma : [UC-STR-01.drawio.svg](UC-STR-01.drawio.svg).
+
 ## Différence avec UC-CON-01
 
 Même comportement que UC-CON-01 (activer une ambiance), avec un autre acteur et une autre précondition. La logique d'activation n'existe qu'une fois ; seul le cas de la réaction en cours est propre au mode Stream.

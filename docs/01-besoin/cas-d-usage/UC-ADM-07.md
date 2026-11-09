@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur ouvre la configuration des associations. |
 | **Préconditions** | Au moins une réaction existe dans la liste des réactions (voir QO-31). Pour les points de chaîne, Starlight est connecté à Twitch (voir UC-ADM-08). |
 
+Schéma : [UC-ADM-07.drawio.svg](UC-ADM-07.drawio.svg).
+
 ## Types d'événement
 
 Un type d'événement est choisi dans une liste fermée : abonnement, don, follow, raid, etc. Les **points de chaîne** forment une famille : chaque récompense de la chaîne est un type d'événement à part entière (identifiée par son identifiant Twitch, affichée par son titre) et a donc sa propre association.

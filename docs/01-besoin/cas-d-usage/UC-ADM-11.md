@@ -9,6 +9,8 @@
 | **Déclencheur** | L'acteur commence une modification dans un cas d'usage de configuration (UC-ADM-01 à 04, 07 et 10 pour l'Administrateur ; UC-STR-05 pour le Streamer). |
 | **Préconditions** | En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). |
 
+Schéma : [UC-ADM-11.drawio.svg](UC-ADM-11.drawio.svg).
+
 ## Vocabulaire
 
 - **Session d'édition** : suite de modifications faites avant de valider ou d'annuler.

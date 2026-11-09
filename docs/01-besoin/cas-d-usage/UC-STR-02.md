@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer sélectionne une réaction via un actionneur (voir QO-11). |
 | **Préconditions** | Starlight est en mode Stream. |
 
+Schéma : [UC-STR-02.drawio.svg](UC-STR-02.drawio.svg).
+
 ## Scénario nominal
 
 1. Le Streamer consulte la liste des réactions disponibles (toutes les réactions y figurent ; l'Administrateur y a accès aussi, voir QO-31) et en sélectionne une.
