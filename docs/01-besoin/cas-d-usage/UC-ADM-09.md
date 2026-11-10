@@ -60,7 +60,7 @@ Le verrou étant conservé d'un live à l'autre, un déverrouillage oublié lais
 
 ## Points non tranchés
 
-- **Délai d'une session d'édition oubliée** (QO-54) : à fixer, plus court pour une session ouverte pendant un live.
+- **Session d'édition oubliée** : annulée automatiquement après un délai paramétrable (voir UC-ADM-11, QO-54).
 
 ## Questions liées
 

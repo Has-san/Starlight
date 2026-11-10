@@ -56,9 +56,14 @@ Aperçu désactivé : les étapes 2 et 3 du scénario n'ont pas lieu, donc les �
 - Validation : la configuration est enregistrée et appliquée, le journal l'indique, l'affichage suit la configuration et la file reprend.
 - Annulation ou interruption : la configuration est inchangée, l'affichage est celui de l'ambiance courante et la file reprend.
 
-## Points non tranchés
+## Session oubliée
 
-- **Durée maximale d'une session** : une session oubliée ouverte laisserait la file en pause et les étoiles bloquées. Proposé : annulation automatique après un délai d'inactivité, avec alerte (QO-54). Le cas du Streamer en direct la rend plus urgente.
+Une session ouverte puis oubliée laisserait la file en pause et les étoiles bloquées. Starlight l'**annule automatiquement après un délai d'inactivité**, traité comme une annulation :
+
+- le délai est **paramétrable**, séparément pour l'Administrateur et pour le Streamer ;
+- valeurs proposées par défaut : court pour le Streamer (de l'ordre de 2 minutes, car sa session met la file en pause devant le public), plus long pour l'Administrateur (de l'ordre de 15 minutes) ;
+- l'acteur est averti avant l'annulation automatique et peut prolonger sa session ;
+- l'annulation automatique est consignée au journal (QO-54).
 
 ## Questions liées
 
