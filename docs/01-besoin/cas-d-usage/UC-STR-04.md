@@ -39,7 +39,7 @@ Schéma : [UC-STR-04.drawio.svg](UC-STR-04.drawio.svg).
 
 Les interrupteurs restent tels quels d'un live à l'autre : rien n'est réinitialisé automatiquement.
 
-À l'entrée en mode Stream, la régie du Streamer affiche un **récapitulatif** : la liste de tous les types d'événements avec leur état (autorisé ou interdit), les types interdits étant mis en évidence. Depuis ce récapitulatif, le Streamer peut modifier chaque interrupteur ou utiliser « tout autoriser ».
+À l'entrée en mode Stream, la régie du Streamer affiche un **récapitulatif** : la liste de tous les types d'événements avec leur état (autorisé ou interdit), les types interdits étant mis en évidence, ainsi que l'**état du verrou de configuration** (UC-ADM-09), avec une alerte persistante tant que la configuration est déverrouillée (QO-59). Depuis ce récapitulatif, le Streamer peut modifier chaque interrupteur ou utiliser « tout autoriser ».
 
 - L'affichage est **non bloquant** : il n'empêche ni les ambiances, ni les réactions manuelles, et les événements sont traités selon l'état enregistré sans attendre.
 - La **confirmation est obligatoire** : le récapitulatif reste affiché, avec une alerte persistante, tant que le Streamer n'a pas confirmé (« j'ai vu l'état »). La confirmation est consignée dans le journal (acteur, moment).

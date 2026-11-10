@@ -54,9 +54,12 @@ Schéma : [UC-ADM-09.drawio.svg](UC-ADM-09.drawio.svg).
 - Le journal indique l'acteur, le moment et le nouvel état.
 - En mode Stream verrouillé, aucune modification de configuration n'est possible.
 
+## Verrou laissé ouvert par oubli
+
+Le verrou étant conservé d'un live à l'autre, un déverrouillage oublié laisserait le live suivant sans protection. L'état du verrou figure donc dans le récapitulatif de début de live (UC-STR-04), avec une alerte persistante tant que la configuration est déverrouillée (QO-59).
+
 ## Points non tranchés
 
-- **Verrou laissé ouvert par oubli** : conservé d'un live à l'autre, un déverrouillage oublié laisserait le live suivant sans protection. Proposé : afficher l'état du verrou dans le récapitulatif de début de live (UC-STR-04), avec une alerte tant que la configuration est déverrouillée (QO-59).
 - **Délai d'une session d'édition oubliée** (QO-54) : à fixer, plus court pour une session ouverte pendant un live.
 
 ## Questions liées
