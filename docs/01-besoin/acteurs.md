@@ -10,4 +10,6 @@ Rôles qui interagissent avec Starlight. Les termes sont définis dans le [gloss
 | **Administrateur** | Gère la configuration de Starlight. | Crée, modifie, supprime secteurs, ambiances (sauf « Off »), séquences et réactions. Consulte et nomme les étoiles annoncées par le pilote, et voit si elles sont disponibles. Associe une réaction à chaque type d'événement. Active chaque étoile ou secteur. Définit les secteurs de chaque mode. Déclenche une réaction. Peut prendre la main à tout moment. |
 | **Système** | Acteur interne de Starlight. | Exécute des comportements particuliers déclenchés par le temps ou par un changement de mode (économie d'énergie, séquence d'ouverture du mode Stream, séquences de diagnostic). |
 
+Schémas d'états par acteur (cas d'usage terminés) : [Convive](etats-convive.drawio.svg), [Streamer](etats-streamer.drawio.svg), [Twitch](etats-twitch.drawio.svg). Ceux de l'Administrateur et du Système suivront à la fin de leurs cas d'usage.
+
 Le développeur n'est pas un rôle du système en fonctionnement.
