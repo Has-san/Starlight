@@ -62,7 +62,7 @@ Une session ouverte puis oubliée laisserait la file en pause et les étoiles bl
 
 - le délai est **paramétrable**, séparément pour l'Administrateur et pour le Streamer ;
 - valeurs proposées par défaut : court pour le Streamer (de l'ordre de 2 minutes, car sa session met la file en pause devant le public), plus long pour l'Administrateur (de l'ordre de 15 minutes) ;
-- l'acteur est averti **30 secondes avant** l'annulation automatique (ce préavis est la fin du délai d'inactivité, il ne s'y ajoute pas) et peut prolonger sa session ;
+- l'acteur est averti **30 secondes avant** l'annulation automatique (ce préavis est la fin du délai d'inactivité, il ne s'y ajoute pas ; sa durée est **paramétrable**) et peut prolonger sa session ;
 - l'annulation automatique est consignée au journal (QO-54).
 
 ## Questions liées
