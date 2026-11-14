@@ -1,6 +1,6 @@
 # UC-SYS-03 : Sortie du mode Stream (retour en Lounge)
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -43,9 +43,9 @@
 - La file est vide, les récompenses sont en pause.
 - Le journal indique l'acteur « Système » et le motif.
 
-## Points non tranchés
+## Précisions décidées
 
-- **Réaction de clôture encore en cours** : proposé que la sortie l'arrête et vide la file, sans attendre ; si le Streamer veut la voir en entier, il quitte le Stream après (QO-66).
+- **Réaction de clôture encore en cours** : la sortie l'arrête et vide la file, sans attendre ; pour la voir en entier, le Streamer quitte le Stream après (QO-66).
 
 ## Questions liées
 
