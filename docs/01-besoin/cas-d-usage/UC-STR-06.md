@@ -1,6 +1,6 @@
 # UC-STR-06 : Démarrer le live
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -41,11 +41,15 @@
 - Les récompenses de points de chaîne sont en service, sauf celles interdites.
 - Le journal indique l'acteur et l'événement.
 
+## Précisions décidées
+
+- **Session d'édition ouverte** : le début du live est refusé tant qu'une session d'édition est en cours, comme les prises de main (UC-ADM-05, QO-60), car la file est en pause pendant l'aperçu.
+- **Récapitulatif non confirmé** : la demande invite d'abord le Streamer à confirmer le récapitulatif, puisque le live devient visible des spectateurs.
+- **Fin du live** : le live est considéré comme terminé à la sortie du mode Stream ; l'état des étoiles à la sortie reste à définir (QO-09).
+
 ## Points non tranchés
 
-- **Session d'édition ouverte** : proposé que le début du live soit refusé tant qu'une session d'édition est en cours, comme les prises de main (UC-ADM-05, QO-60), car la file est en pause pendant l'aperçu (QO-63).
-- **Récapitulatif non confirmé** : proposé que la demande invite d'abord le Streamer à confirmer le récapitulatif, puisque le live devient visible des spectateurs (QO-63).
-- **Fin du live** : proposé que le live soit considéré comme terminé à la sortie du mode Stream ; l'état à la sortie reste à définir (QO-09, QO-63).
+- **Sortie du mode Stream** : état des étoiles à définir, dans un cas d'usage à part (QO-09).
 
 ## Questions liées
 
