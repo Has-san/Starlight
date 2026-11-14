@@ -1,6 +1,6 @@
 # UC-ADM-05 : Activer une étoile ou un secteur
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -44,7 +44,8 @@ Une étoile en manuel peut être rendue au système sans action de l'Administrat
 - **A2, étoile dans plusieurs secteurs** : une commande par secteur ne la touche qu'une fois ; la dernière commande reçue s'applique.
 - **A3, nouvelle commande sur une étoile déjà en manuel** : le nouvel effet remplace l'ancien et le délai de libération repart de zéro.
 - **A4, changement d'ambiance ou réaction pendant la prise de main** : les étoiles en manuel ne sont pas touchées.
-- **A5, bouton « Off »** : il éteint aussi les étoiles en manuel (voir QO-60).
+- **A5, bouton « Off »** : il éteint aussi les étoiles en manuel et met fin à la prise de main : elles passent sous l'ambiance « Off » (QO-60).
+- **A6 bis, session d'édition ouverte** : la commande manuelle est refusée tant qu'une session d'édition (aperçu) est ouverte, pour éviter deux sources de commande sur les mêmes étoiles (QO-60).
 - **A6, retour d'une étoile après indisponibilité** : si elle n'est pas en manuel, elle reprend l'ambiance courante (QO-55).
 
 ## Postconditions
