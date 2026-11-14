@@ -22,7 +22,7 @@
 
 - Si Twitch signale que le live est hors ligne **depuis plus longtemps qu'un premier délai** (**5 minutes** par défaut), la régie du Streamer affiche une alerte : « le live semble terminé ».
 - L'alerte **propose** de terminer le live. Accepter la proposition suit le scénario nominal.
-- **Coupure automatique** : si l'alerte reste **sans réponse** jusqu'à un second délai (**20 minutes** par défaut, comptées depuis le signal de Twitch), Starlight termine le live et **quitte le mode Stream** : retour en Lounge (UC-SYS-03). Les récompenses de points de chaîne sont mises en pause, la file est vidée et il n'y a pas de réaction de clôture. C'est la seule exception au refus de quitter le Stream pendant un live (UC-STR-08).
+- **Coupure automatique** : si l'alerte reste **sans réponse** jusqu'à un second délai (**20 minutes** par défaut après le signal de Twitch, soit **15 minutes après l'alerte**), Starlight termine le live et **quitte le mode Stream** : retour en Lounge (UC-SYS-03). Les récompenses de points de chaîne sont mises en pause, la file est vidée et il n'y a pas de réaction de clôture. C'est la seule exception au refus de quitter le Stream pendant un live (UC-STR-08).
 - Les deux délais sont **paramétrables** par l'Administrateur ; le second doit être plus long que le premier.
 - Le décompte s'arrête si Twitch signale que le live est de nouveau en ligne, ou si le Streamer répond à l'alerte : il termine le live (scénario nominal) ou la refuse (A5).
 - Elle n'existe que si Starlight est connecté à Twitch (UC-ADM-08) et si le live a commencé dans Starlight.
@@ -57,11 +57,7 @@
 
 - **Session d'édition ouverte** : la fin du live reste possible, contrairement au début du live (UC-STR-06), car elle protège les spectateurs (récompenses remises en pause tout de suite). La réaction de clôture entre dans la file, qui est en pause pendant l'aperçu : elle se joue à la fin de la session d'édition (UC-ADM-11).
 - **Nouveau live** : après une fin de live, un nouveau live peut commencer sans quitter le mode Stream.
-- **Délais** : alerte à 5 minutes, coupure automatique à 20 minutes, réglés par l'Administrateur.
-
-## Points non tranchés
-
-- **Point de départ du décompte de 20 minutes** : proposé depuis le signal de Twitch, soit 15 minutes après l'alerte (QO-64).
+- **Délais** : alerte à 5 minutes, coupure automatique à 20 minutes après le signal de Twitch (15 minutes après l'alerte), réglés par l'Administrateur.
 
 ## Questions liées
 
