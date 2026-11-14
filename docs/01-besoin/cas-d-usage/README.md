@@ -20,7 +20,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-ADM-03](UC-ADM-03.md) | Gérer les ambiances (créer, modifier, supprimer ; « Off » est protégée) | Validé |
 | [UC-ADM-04](UC-ADM-04.md) | Gérer les séquences (créer, modifier, supprimer) | Brouillon |
 | [UC-ADM-05](UC-ADM-05.md) | Activer une étoile ou un secteur | Validé |
-| UC-ADM-06 | Rendre la main | À rédiger |
+| [UC-ADM-06](UC-ADM-06.md) | Rendre la main | Validé |
 | [UC-ADM-07](UC-ADM-07.md) | Associer une réaction à un type d'événement | Validé |
 | [UC-ADM-08](UC-ADM-08.md) | Connecter Starlight à Twitch | Validé |
 | [UC-ADM-09](UC-ADM-09.md) | Verrouiller ou autoriser la configuration pendant le Stream | Validé |
