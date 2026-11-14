@@ -1,6 +1,6 @@
 # UC-ADM-12 : Gérer les réactions (créer, modifier, supprimer)
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -33,6 +33,9 @@
 - **À la validation**, Starlight vérifie : nom unique, au moins un élément, aucune séquence en boucle, durée totale inférieure ou égale au maximum, éléments existants et valides.
 - Une réaction dont un effet n'est plus annoncé par le pilote est signalée comme invalide (alerte non bloquante) et n'est pas jouée tant qu'elle n'est pas corrigée.
 - Les séquences et les ambiances utilisées par une réaction ne peuvent pas être supprimées tant que la réaction existe (UC-ADM-03, UC-ADM-04, QO-46).
+- **Essai** : l'Administrateur peut jouer une réaction à l'essai comme une séquence (UC-ADM-04) : prise de main sur les étoiles visées, possible même quand la configuration est verrouillée, étoiles rendues à la fin.
+- **Pas de réaction dans une réaction** : une réaction ne contient que des séquences et des ambiances, pour garder une durée vérifiable.
+- **Suppression d'une réaction non associée alors qu'une demande manuelle est en file** : la demande en file est jouée avec la version qui existait à son arrivée (QO-44).
 
 ## Scénarios alternatifs
 
@@ -50,9 +53,6 @@
 
 ## Points non tranchés
 
-- **Essai d'une réaction** : proposé que l'Administrateur puisse jouer une réaction à l'essai comme une séquence (UC-ADM-04) : prise de main sur les étoiles visées, possible même verrouillé, rendues à la fin.
-- **Réaction dans une réaction** : proposé que ce soit interdit (une réaction ne contient que des séquences et des ambiances), pour garder une durée vérifiable.
-- **Suppression d'une réaction déjà en file** : si une réaction non associée est supprimée alors qu'une demande manuelle est en file, que devient cette demande ? Proposé : elle est jouée avec la version qui existait à son arrivée (QO-44).
 - **Variation selon le nombre d'occurrences** (rafale, QO-22) : hors de ce cas d'usage pour l'instant.
 
 ## Questions liées
