@@ -15,7 +15,7 @@ Schéma : [UC-ADM-07.drawio.svg](UC-ADM-07.drawio.svg).
 
 Un type d'événement est choisi dans une liste fermée : abonnement, don, follow, raid, etc., et les événements du Système. Les **points de chaîne** forment une famille : chaque récompense de la chaîne est un type d'événement à part entière (identifiée par son identifiant Twitch, affichée par son titre) et a donc sa propre association.
 
-Les **événements du Système** forment une seconde famille : « passage en mode Stream » (UC-SYS-02) et « début du live » (UC-STR-06). Ils s'associent comme les autres, y compris la priorité et « aucune réaction ». Ils sont toujours proposés, Twitch connecté ou non.
+Les **événements du Système** forment une seconde famille : « passage en mode Stream » (UC-SYS-02), « début du live » (UC-STR-06) et « fin du live » (UC-STR-07). Ils s'associent comme les autres, y compris la priorité et « aucune réaction ». Ils sont toujours proposés, Twitch connecté ou non.
 
 Un type d'événement a **au plus une association**.
 

@@ -7,7 +7,7 @@
 | **Acteur principal** | Streamer (l'Administrateur peut faire la même chose) |
 | **Objectif** | Marquer le début du live : jouer la séquence d'ouverture que voient les spectateurs et ouvrir les récompenses de points de chaîne. |
 | **Déclencheur** | Le Streamer demande le début du live depuis sa régie. |
-| **Préconditions** | Starlight est en mode Stream (UC-SYS-02). Le live n'a pas déjà commencé. |
+| **Préconditions** | Starlight est en mode Stream (UC-SYS-02). Le live n'a pas déjà commencé, ou il a été terminé (UC-STR-07). |
 
 ## Principe
 
@@ -45,7 +45,7 @@
 
 - **Session d'édition ouverte** : le début du live est refusé tant qu'une session d'édition est en cours, comme les prises de main (UC-ADM-05, QO-60), car la file est en pause pendant l'aperçu.
 - **Récapitulatif non confirmé** : la demande invite d'abord le Streamer à confirmer le récapitulatif, puisque le live devient visible des spectateurs.
-- **Fin du live** : le live est considéré comme terminé à la sortie du mode Stream ; l'état des étoiles à la sortie reste à définir (QO-09).
+- **Fin du live** : elle est manuelle (UC-STR-07) et distincte de la sortie du mode Stream. Après une fin de live, un nouveau live peut commencer.
 
 ## Points non tranchés
 
