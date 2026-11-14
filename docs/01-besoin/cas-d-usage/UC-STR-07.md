@@ -41,7 +41,8 @@
 - **A3, aucune réaction associée** : l'étape 3 est ignorée ; les récompenses sont tout de même mises en pause.
 - **A4, récompense impossible à mettre en pause** : alerte dans la régie, consignée dans le journal (QO-42).
 - **A5, alerte refusée** : le Streamer indique qu'il continue ; l'alerte ne revient pas pour la même coupure, mais une nouvelle coupure repart d'un nouveau délai.
-- **A6, nouveau début de live** : après une fin de live, le Streamer peut démarrer un nouveau live (UC-STR-06) sans quitter le mode Stream.
+- **A6, session d'édition ouverte** : la fin du live est acceptée ; la réaction de clôture attend la fin de la session.
+- **A7, nouveau début de live** : après une fin de live, le Streamer peut démarrer un nouveau live (UC-STR-06) sans quitter le mode Stream.
 
 ## Postconditions
 
@@ -49,9 +50,13 @@
 - Les récompenses de points de chaîne sont en pause.
 - Le journal indique l'acteur et l'événement.
 
+## Précisions décidées
+
+- **Session d'édition ouverte** : la fin du live reste possible, contrairement au début du live (UC-STR-06), car elle protège les spectateurs (récompenses remises en pause tout de suite). La réaction de clôture entre dans la file, qui est en pause pendant l'aperçu : elle se joue à la fin de la session d'édition (UC-ADM-11).
+- **Nouveau live** : après une fin de live, un nouveau live peut commencer sans quitter le mode Stream.
+
 ## Points non tranchés
 
-- **Session d'édition ouverte** : proposé que la fin du live soit refusée tant qu'une session d'édition est en cours, comme le début du live (UC-STR-06), car la file est en pause pendant l'aperçu (QO-64).
 - **Délai de l'alerte** : 5 minutes par défaut, réglé par l'Administrateur ; valeur proposée (QO-64).
 
 ## Questions liées
