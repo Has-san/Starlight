@@ -1,6 +1,6 @@
 # UC-STR-07 : Terminer le live
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -20,7 +20,7 @@
 
 ## Alerte de fin de live
 
-- Si Twitch signale que le live est hors ligne **depuis plus longtemps qu'un délai paramétrable** (5 minutes par défaut, réglé par l'Administrateur), la régie du Streamer affiche une alerte : « le live semble terminé ».
+- Si Twitch signale que le live est hors ligne **depuis plus longtemps qu'un délai paramétrable** (**10 minutes** par défaut, réglé par l'Administrateur), la régie du Streamer affiche une alerte : « le live semble terminé ».
 - L'alerte **propose** de terminer le live ; elle n'agit jamais seule. Accepter la proposition suit le scénario nominal.
 - L'alerte disparaît d'elle-même si Twitch signale que le live est de nouveau en ligne, ou quand le Streamer termine le live ou la refuse.
 - Elle n'existe que si Starlight est connecté à Twitch (UC-ADM-08) et si le live a commencé dans Starlight.
@@ -54,10 +54,7 @@
 
 - **Session d'édition ouverte** : la fin du live reste possible, contrairement au début du live (UC-STR-06), car elle protège les spectateurs (récompenses remises en pause tout de suite). La réaction de clôture entre dans la file, qui est en pause pendant l'aperçu : elle se joue à la fin de la session d'édition (UC-ADM-11).
 - **Nouveau live** : après une fin de live, un nouveau live peut commencer sans quitter le mode Stream.
-
-## Points non tranchés
-
-- **Délai de l'alerte** : 5 minutes par défaut, réglé par l'Administrateur ; valeur proposée (QO-64).
+- **Délai de l'alerte** : 10 minutes par défaut, réglé par l'Administrateur.
 
 ## Questions liées
 
