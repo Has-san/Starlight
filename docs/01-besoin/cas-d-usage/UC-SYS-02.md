@@ -1,6 +1,6 @@
 # UC-SYS-02 : Passage en mode Stream
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
