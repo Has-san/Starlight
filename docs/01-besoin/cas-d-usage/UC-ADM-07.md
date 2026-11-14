@@ -13,7 +13,9 @@ Schéma : [UC-ADM-07.drawio.svg](UC-ADM-07.drawio.svg).
 
 ## Types d'événement
 
-Un type d'événement est choisi dans une liste fermée : abonnement, don, follow, raid, etc. Les **points de chaîne** forment une famille : chaque récompense de la chaîne est un type d'événement à part entière (identifiée par son identifiant Twitch, affichée par son titre) et a donc sa propre association.
+Un type d'événement est choisi dans une liste fermée : abonnement, don, follow, raid, etc., et les événements du Système. Les **points de chaîne** forment une famille : chaque récompense de la chaîne est un type d'événement à part entière (identifiée par son identifiant Twitch, affichée par son titre) et a donc sa propre association.
+
+Les **événements du Système** forment une seconde famille : « passage en mode Stream » (UC-SYS-02) et « début du live » (UC-STR-06). Ils s'associent comme les autres, y compris la priorité et « aucune réaction ». Ils sont toujours proposés, Twitch connecté ou non.
 
 Un type d'événement a **au plus une association**.
 
@@ -41,7 +43,7 @@ Un type d'événement a **au plus une association**.
 - **A1, suppression d'une réaction associée** : refusée. Une réaction actuellement associée à un type d'événement ne peut pas être supprimée ; l'Administrateur doit d'abord modifier ou retirer l'association. Il n'existe donc pas d'association invalide.
 - **A2, modification, désactivation ou suppression d'une association** : même scénario que le nominal ; l'effet est le même (événements à venir uniquement).
 - **A3, récompense de chaîne inconnue** : un échange arrive pour une récompense sans association. Il est traité comme « aucune association » (événement ignoré et consigné).
-- **A4, Twitch non connecté** : les types liés aux points de chaîne ne peuvent pas être proposés ; les autres types restent configurables.
+- **A4, Twitch non connecté** : les types liés aux points de chaîne ne peuvent pas être proposés ; les autres types, y compris les événements du Système, restent configurables.
 
 ## Postconditions
 
