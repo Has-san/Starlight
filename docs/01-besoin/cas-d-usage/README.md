@@ -31,7 +31,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-SYS-02](UC-SYS-02.md) | Passage en mode Stream (ambiance neutre, réaction facultative, récapitulatif) | Validé |
 | [UC-STR-06](UC-STR-06.md) | Démarrer le live (séquence d'ouverture, déclenchement manuel) | Validé |
 | [UC-STR-07](UC-STR-07.md) | Terminer le live (manuel, avec alerte puis coupure automatique) | Validé |
-| [UC-STR-08](UC-STR-08.md) | Changer de mode (Lounge ↔ Stream) | À valider |
-| UC-SYS-03 | Sortie du mode Stream (retour en Lounge) | À rédiger |
+| [UC-STR-08](UC-STR-08.md) | Changer de mode (Lounge ↔ Stream) | Validé |
+| [UC-SYS-03](UC-SYS-03.md) | Sortie du mode Stream (retour en Lounge) | Brouillon |
 
 Les comportements du Système sont décrits comme des cas d'usage dont l'acteur est le Système (déclenchement par le temps ou par un changement de mode).

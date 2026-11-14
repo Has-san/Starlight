@@ -1,6 +1,6 @@
 # UC-STR-08 : Changer de mode (Lounge ↔ Stream)
 
-*Statut : à valider.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
