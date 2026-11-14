@@ -14,7 +14,7 @@
 - Le changement de mode est **toujours manuel**. Il n'est pas déclenché par l'ouverture d'OBS, qui peut servir à autre chose que streamer.
 - **Le Convive ne peut pas changer de mode.** Seuls le Streamer et l'Administrateur le peuvent.
 - Les conséquences du changement sont décrites ailleurs : en entrée, UC-SYS-02 (ambiance neutre, réaction facultative, récapitulatif, pause des récompenses) ; en sortie, UC-SYS-03 (à rédiger : retour à la dernière ambiance du Lounge).
-- **Quitter le mode Stream est refusé tant qu'un live est en cours** (commencé et non terminé). Le Streamer doit d'abord terminer le live (UC-STR-07) ; l'alerte de fin de live l'y aide.
+- **Quitter le mode Stream est refusé tant qu'un live est en cours** (commencé et non terminé). Le Streamer doit d'abord terminer le live (UC-STR-07) ; l'alerte de fin de live l'y aide. Seule exception : la coupure automatique après une alerte de fin de live restée sans réponse (UC-STR-07).
 - Un changement de mode est une **action en direct** : le verrou de configuration (UC-ADM-09) ne l'empêche pas.
 - Au changement de mode, le délai de libération automatique des étoiles en manuel repart de zéro (UC-ADM-05) et l'économie d'énergie est réinitialisée (UC-SYS-01).
 

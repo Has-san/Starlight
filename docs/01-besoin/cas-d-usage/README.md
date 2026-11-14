@@ -30,7 +30,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-SYS-01](UC-SYS-01.md) | Économie d'énergie (mode Lounge uniquement) | Validé |
 | [UC-SYS-02](UC-SYS-02.md) | Passage en mode Stream (ambiance neutre, réaction facultative, récapitulatif) | Validé |
 | [UC-STR-06](UC-STR-06.md) | Démarrer le live (séquence d'ouverture, déclenchement manuel) | Validé |
-| [UC-STR-07](UC-STR-07.md) | Terminer le live (manuel, avec alerte de fin de live) | Validé |
+| [UC-STR-07](UC-STR-07.md) | Terminer le live (manuel, avec alerte puis coupure automatique) | À valider |
 | [UC-STR-08](UC-STR-08.md) | Changer de mode (Lounge ↔ Stream) | Brouillon |
 | UC-SYS-03 | Sortie du mode Stream (retour en Lounge) | À rédiger |
 
