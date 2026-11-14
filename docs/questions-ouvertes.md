@@ -5,7 +5,7 @@ Chaque question est numérotée et passe à « Tranchée » une fois la décisio
 | ID | Question | Étape concernée | Statut |
 |---|---|---|---|
 | QO-01 | Quelles sont les priorités des événements dans la file d'attente ? | Spécifications | Ouverte |
-| QO-02 | Une réaction composée de plusieurs séquences ou ambiances les joue-t-elle en série ou en simultané ? | Spécifications | Ouverte |
+| QO-02 | Une réaction composée de plusieurs séquences ou ambiances les joue-t-elle en série ou en simultané ? Décidé : les éléments sont placés sur une ligne de temps, chacun avec un instant de départ : même départ = simultané, départ à la fin d'un autre = série, mélange et chevauchement possibles (UC-ADM-12). | Spécifications | Tranchée |
 | QO-03 | Après une prise de main de l'Administrateur, l'état précédent est-il restauré ? Non : l'état est conservé jusqu'à une action explicite. | Cas d'usage | Tranchée |
 | QO-04 | Granularité d'une étoile : un ruban de LED est une étoile ; seul son pilote connaît ses capacités. | Architecture matérielle | Tranchée |
 | QO-05 | L'extinction par le Convive est-elle une ambiance ou un état distinct ? C'est une ambiance prédéfinie « Off ». | Cas d'usage | Tranchée |
@@ -28,7 +28,7 @@ Chaque question est numérotée et passe à « Tranchée » une fois la décisio
 | QO-22 | Rafale d'événements : aucun événement n'est perdu, et la réaction varie avec le nombre d'occurrences. Reste à définir les règles de variation, un plafond (accélération maximale) et le délai maximal acceptable entre un événement et sa réaction. | Spécifications | Ouverte (en partie tranchée) |
 | QO-23 | Événement reçu en double : chaque événement est horodaté ou identifié pour reconnaître un doublon. Le mécanisme exact est laissé à la conception. | Spécifications | Tranchée (mécanisme à définir) |
 | QO-24 | Une réaction prioritaire interrompt-elle la réaction en cours ? Non : elle passe avant les autres réactions en attente. | Spécifications | Tranchée |
-| QO-25 | Sans interruption possible, une longue réaction retarde une réaction prioritaire : une réaction aura une durée maximale (10 secondes envisagées). Reste à fixer la valeur, si elle est la même pour toutes, et ce qui se passe si une séquence dépasse cette durée. | Spécifications | Ouverte (en partie tranchée) |
+| QO-25 | Sans interruption possible, une longue réaction retarde une réaction prioritaire : une réaction a une durée maximale. Décidé : 10 secondes par défaut, la même pour toutes les réactions, paramétrable ; une réaction plus longue est refusée à la validation avec une explication, jamais raccourcie en silence. Reste à définir ce qui se passe pour une séquence utilisée seule qui dépasserait cette durée. | Spécifications | Ouverte (en partie tranchée) |
 | QO-26 | Qui décide quelle réaction correspond à un événement ? L'Administrateur choisit la réaction associée à chaque type d'événement ; le pilote décide, pour chaque étoile, comment la rendre (quelle séquence jouer). | Architecture logicielle | Tranchée |
 | QO-27 | Vocabulaire : « pilote », « module » et « contrôleur » désignent-ils la même chose ? On garde « pilote » (défini au glossaire). | Glossaire | Tranchée |
 | QO-28 | Priorité d'une réaction manuelle du Streamer : le Streamer choisit. Prioritaire : elle passe devant toutes les autres réactions en attente. Non prioritaire : elle suit la file avec le même jeu de priorité qu'un événement externe. | Spécifications | Tranchée |
