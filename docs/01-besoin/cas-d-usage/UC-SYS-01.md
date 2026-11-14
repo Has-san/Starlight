@@ -1,6 +1,6 @@
 # UC-SYS-01 : Économie d'énergie (mode Lounge)
 
-*Statut : brouillon.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -12,7 +12,7 @@
 ## Principe
 
 - **Inactivité** : sans capteur de présence, c'est le temps écoulé depuis la dernière demande d'un Convive (ambiance, extinction). Toute demande remet la temporisation à zéro.
-- **Délai** : paramétrable par l'Administrateur.
+- **Délai** : paramétrable par l'Administrateur ; **3 heures** par défaut.
 - **Avertissement** : sans capteur de présence, l'alerte « **confirmez votre présence** » est émise **en même temps** que la séquence d'extinction, pas avant. La séquence, qui fait baisser les lumières **progressivement**, est elle-même l'alerte visuelle ; un message s'y ajoute si l'actionneur du Convive peut en afficher un (QO-11). La confirmation est n'importe quelle demande du Convive. Si un capteur de présence existe un jour (ID-14), la présence détectée remet la temporisation à zéro et il n'y a plus d'alerte.
 - **Garde-fous** :
   - un **interrupteur général** active ou coupe l'économie d'énergie ;
@@ -43,11 +43,14 @@
 - Les étoiles du mode Lounge sont éteintes, ou la séquence a été interrompue par une demande.
 - Le journal indique l'acteur « Système » et le motif.
 
+## Précisions décidées
+
+- **Ambiance courante** : elle est conservée pendant l'économie d'énergie ; une demande du Convive, même pour la même ambiance, rallume les étoiles (UC-CON-01, A2).
+- **Session d'édition ouverte** : elle compte comme une activité (pas d'extinction automatique pendant l'édition).
+- **Séquence d'extinction** : durée paramétrable, **15 minutes** par défaut. Elle s'ajoute au délai : extinction complète à 3 h 15 d'inactivité par défaut.
+
 ## Points non tranchés
 
-- **Ambiance courante pendant l'économie d'énergie** : proposé qu'elle soit conservée, pour qu'une seule demande du Convive (même pour la même ambiance) rallume les étoiles. UC-CON-01 dit qu'une ambiance déjà courante ne change rien : il faut préciser que, pendant l'économie d'énergie, la demande rallume (QO-61).
-- **Session d'édition ouverte** : proposé qu'elle compte comme une activité (pas d'extinction automatique pendant l'édition) (QO-61).
-- **Durée de la séquence d'extinction** : proposé qu'elle soit paramétrable, comme le délai (QO-61).
 - **Message « confirmez votre présence »** : sa forme dépend des actionneurs du Convive (bouton, téléphone, télécommande, QO-11). Avec un simple bouton sans écran, la séquence d'extinction est la seule alerte (QO-61).
 
 ## Questions liées
