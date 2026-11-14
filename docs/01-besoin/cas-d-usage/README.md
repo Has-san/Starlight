@@ -28,6 +28,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-ADM-11](UC-ADM-11.md) | Valider ou annuler une configuration en cours (aperçu) | Validé |
 | [UC-ADM-12](UC-ADM-12.md) | Gérer les réactions (créer, modifier, supprimer) | Validé |
 | [UC-SYS-01](UC-SYS-01.md) | Économie d'énergie (mode Lounge uniquement) | Validé |
-| UC-SYS-02 | Séquence d'ouverture du mode Stream | À rédiger |
+| [UC-SYS-02](UC-SYS-02.md) | Passage en mode Stream (ambiance neutre, réaction facultative, récapitulatif) | Brouillon |
+| UC-STR-06 | Démarrer le live (séquence d'ouverture, déclenchement manuel) | À rédiger |
 
 Les comportements du Système sont décrits comme des cas d'usage dont l'acteur est le Système (déclenchement par le temps ou par un changement de mode).
