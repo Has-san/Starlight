@@ -56,9 +56,12 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 
 ## Points non tranchés
 
-- Saisie du rythme : régler à la main chaque durée est long pour un chant comme « Karmine ». Une aide (par exemple enregistrer le rythme en le frappant) est une idée à étudier, hors besoin pour l'instant.
+- Saisie du rythme : régler à la main chaque durée est long pour un chant comme « Karmine ». Une aide (enregistrer le rythme en le frappant au clavier) est une idée à étudier, hors besoin pour l'instant (ID-12).
 - Plus tard, avec le son : suivre le rythme d'un son (ID-10).
+- **Essai et prise de main (UC-ADM-05)** : proposé que l'essai prenne la main sur les étoiles visées le temps de l'essai (elles sont « en manuel », l'ambiance courante et les réactions ne les touchent pas) puis les rende à la fin (UC-ADM-06), pour éviter deux sources de commande sur les mêmes étoiles.
+- **Essai et verrou (UC-ADM-09)** : proposé que l'essai reste possible quand la configuration est verrouillée, car il ne modifie aucune configuration (comme le test manuel).
+- **Essai pendant une session d'édition** : proposé que, pendant l'édition d'une séquence, l'essai soit celui de la session (aperçu à la demande) ; en dehors d'une session, il suit les deux points ci-dessus (QO-60).
 
 ## Questions liées
 
-QO-02, QO-08, QO-10, QO-25, QO-46, QO-47, QO-52, QO-55
+QO-02, QO-08, QO-10, QO-25, QO-46, QO-47, QO-52, QO-55, QO-60
