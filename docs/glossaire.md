@@ -20,8 +20,8 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 | **Effet** | `effect` | Ce que le pilote sait jouer sur une étoile, avec ses paramètres (allumer en une couleur et une intensité, éteindre, passer progressivement d'une couleur à une autre). Brique de base d'une étape de séquence. |
 | **Aperçu** | `preview` | Application provisoire, sur les étoiles, de la configuration en cours d'édition, avant validation ou annulation (UC-ADM-11). |
 | **Essai** | `trial` | Action volontaire de l'Administrateur qui joue une séquence sur une étoile ou un secteur de son choix, à la demande (UC-ADM-04). Diffère de l'aperçu, qui est automatique. |
-| **Événement** | `event` | Déclencheur extérieur qui entraîne une réaction. |
-| **Réaction** | `reaction` | État temporaire déclenché par un événement extérieur, par le Streamer ou par l'Administrateur. Composée par l'Administrateur d'une ou plusieurs séquences ou ambiances, sous un nom (par exemple « Karmine »). |
+| **Événement** | `event` | Déclencheur qui entraîne une réaction : événement extérieur (Twitch) ou **événement du Système** (passage en mode Stream, début du live, fin du live). |
+| **Réaction** | `reaction` | État temporaire déclenché par un événement, par le Streamer ou par l'Administrateur. Composée par l'Administrateur d'une ou plusieurs séquences ou ambiances, sous un nom (par exemple « Karmine »). |
 
 ## Règles de comportement
 
@@ -32,8 +32,9 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 - Une nouvelle ambiance choisie pendant une réaction devient l'ambiance courante tout de suite, mais ne s'affiche qu'à la fin des réactions.
 - L'économie d'énergie (extinction après inactivité) ne s'applique pas en mode Stream.
 - Le bouton OFF arrête la réaction en cours, vide la file et active l'ambiance « Off ». Il vaut en Lounge comme en Stream.
-- Interdire les événements Twitch est une option du mode Stream : les événements sont alors ignorés et comptés, les ambiances et réactions du Streamer restent possibles.
-- En mode Stream, le Convive ne peut pas agir : Twitch et le Streamer ont la main.
+- Chaque type d'événement Twitch a un interrupteur (autorisé ou interdit), option du mode Stream : un type interdit est ignoré et compté, les ambiances et réactions du Streamer restent possibles. Seules les récompenses de points de chaîne peuvent être bloquées en amont (mise en pause). Avant le début du live, elles sont toutes en pause.
+- En mode Stream, le Convive ne peut pas agir : Twitch et le Streamer ont la main. Seuls le Streamer et l'Administrateur changent de mode, à la main.
+- Le mode Stream a deux moments distincts à chaque extrémité : le passage en Stream (étoiles sur l'ambiance neutre, seul le Streamer les voit) puis le début du live (séquence d'ouverture pour les spectateurs, manuel) ; la fin du live (manuelle) puis la sortie du Stream (retour à la dernière ambiance du Lounge).
 - L'Administrateur peut toujours prendre la main, quel que soit le mode.
 - Toute modification de configuration passe par un aperçu sur les étoiles, puis par une validation ou une annulation ; pendant l'aperçu, la file de réactions est en pause et l'Administrateur est alerté quand des réactions attendent.
 - Starlight n'envoie au pilote que les étoiles touchées : celles que l'ambiance (ou la séquence) désigne **et** qui appartiennent à un secteur du mode actif. Exceptions : le test manuel de l'Administrateur ignore les secteurs du mode, et l'ambiance « Off » éteint toutes les étoiles. Si rien n'est en commun, rien ne s'allume et le journal l'indique.
