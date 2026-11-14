@@ -1,6 +1,6 @@
 # UC-STR-07 : Terminer le live
 
-*Statut : à valider.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|

@@ -1,6 +1,6 @@
 # UC-STR-08 : Changer de mode (Lounge ↔ Stream)
 
-*Statut : brouillon.*
+*Statut : à valider.*
 
 | Champ | Contenu |
 |---|---|
@@ -32,17 +32,13 @@
 - **A2, mode déjà actif** : aucun changement.
 - **A3, sortie du Stream avec un live en cours** : refusée, avec un message qui indique de terminer le live d'abord (UC-STR-07).
 - **A4, session d'édition ouverte** : le Streamer doit d'abord valider ou annuler la session, comme pour le verrou de configuration (UC-ADM-09).
-- **A5, Twitch non connecté à l'entrée en Stream** : l'entrée est possible ; le récapitulatif signale l'absence de connexion (QO-65).
+- **A5, Twitch non connecté à l'entrée en Stream** : l'entrée est possible ; le récapitulatif signale l'absence de connexion par une alerte.
 - **A6, étoile en manuel** : non touchée par les conséquences du changement (UC-ADM-05).
 
 ## Postconditions
 
 - Starlight est dans le nouveau mode, ou dans le mode d'origine si la demande est refusée.
 - Le journal indique l'acteur et les deux modes.
-
-## Points non tranchés
-
-- **Twitch non connecté à l'entrée en Stream** : proposé que l'entrée soit possible, avec une alerte dans le récapitulatif (QO-65).
 
 ## Questions liées
 
