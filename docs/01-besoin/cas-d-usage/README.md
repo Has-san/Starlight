@@ -27,7 +27,7 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-ADM-10](UC-ADM-10.md) | Définir les secteurs d'un mode (Lounge, Stream) | Validé |
 | [UC-ADM-11](UC-ADM-11.md) | Valider ou annuler une configuration en cours (aperçu) | Validé |
 | [UC-ADM-12](UC-ADM-12.md) | Gérer les réactions (créer, modifier, supprimer) | Validé |
-| UC-SYS-01 | Économie d'énergie (mode Lounge uniquement) | À rédiger |
+| [UC-SYS-01](UC-SYS-01.md) | Économie d'énergie (mode Lounge uniquement) | Brouillon |
 | UC-SYS-02 | Séquence d'ouverture du mode Stream | À rédiger |
 
 Les comportements du Système sont décrits comme des cas d'usage dont l'acteur est le Système (déclenchement par le temps ou par un changement de mode).

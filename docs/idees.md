@@ -7,7 +7,7 @@ Les idées ne sont pas des exigences. Elles sont consignées ici pour ne pas êt
 | ID-01 | Haut-parleurs synchronisés avec la musique : ambiance lumineuse selon le rythme. | Idée initiale | À étudier |
 | ID-02 | Autre API événementielle que Twitch. | Idée initiale | À étudier |
 | ID-03 | Étoile filante : séquence spatiale qui se déplace sur plusieurs étoiles d'un secteur. | Échange sur les rubans de LED | À étudier |
-| ID-04 | Séquence « Économie d'énergie » : au bout d'un certain temps, extinction des étoiles si personne n'intervient (voir QO-13). | Cas d'usage UC-CON-01 | À étudier |
+| ID-04 | Séquence « Économie d'énergie » : au bout d'un certain temps, extinction des étoiles si personne n'intervient (voir QO-13). | Cas d'usage UC-CON-01 | Retenue (UC-SYS-01) |
 | ID-05 | Séquences de diagnostic jouées par le Système pour voir en direct ce qui se passe (ex. signaler une étoile injoignable). | Échange sur le Système | À étudier |
 | ID-06 | Signaler la perte de communication avec une étoile par une séquence particulière, visible uniquement en mode diagnostic, pour déboguer vite (voir QO-18, QO-19). | Échange sur la perte de communication | À étudier |
 | ID-07 | Équipes et nations (France, Mali, Karmine Corp, PSG, Man Utd) : pour chacune, une **réaction** (flash temporaire) et une **ambiance** (soirée aux couleurs de l'équipe). | Échange du 2 novembre | À étudier |
