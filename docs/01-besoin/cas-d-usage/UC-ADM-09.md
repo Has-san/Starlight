@@ -25,6 +25,7 @@ Schéma : [UC-ADM-09.drawio.svg](UC-ADM-09.drawio.svg).
 | Toute modification de configuration : nommer une étoile (UC-ADM-01), secteurs (UC-ADM-02), ambiances (UC-ADM-03), séquences (UC-ADM-04), associations événement → réaction (UC-ADM-07), secteurs d'un mode (UC-ADM-10), réactions (UC-ADM-12) | Consulter la configuration |
 | | Actions de live : activer une ambiance, déclencher une réaction, arrêter, bouton OFF |
 | | Test manuel d'une étoile ou d'un secteur |
+| | Essai d'une séquence (UC-ADM-04) |
 | | Choix des secteurs du mode Stream par le Streamer (UC-STR-05) |
 
 ## Scénario nominal : verrouiller

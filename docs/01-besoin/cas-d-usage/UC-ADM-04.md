@@ -1,6 +1,6 @@
 # UC-ADM-04 : Gérer les séquences (créer, modifier, supprimer)
 
-*Statut : brouillon, à valider.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -38,6 +38,9 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 - **Une séquence en boucle est durable** : elle sert aux ambiances, jamais aux réactions, qui sont temporaires.
 - **Une séquence utilisée dans une réaction est jouée une fois** et sa durée respecte la durée maximale d'une réaction (environ 10 secondes, voir QO-25). Cette durée est vérifiée à la validation de la séquence et de la réaction (UC-ADM-12).
 - **Essai explicite** : l'Administrateur peut jouer une séquence sur une étoile ou un secteur de son choix, hors des secteurs du mode, même si l'aperçu est désactivé. L'essai s'arrête à la fin de la séquence, à la durée maximale pour une boucle, ou quand l'Administrateur l'arrête.
+  - **Prise de main** : l'essai prend la main sur les étoiles visées le temps de l'essai (elles sont « en manuel », UC-ADM-05) ; l'ambiance courante et les réactions ne les touchent pas. Elles sont rendues à la fin de l'essai (UC-ADM-06).
+  - **Verrou** : l'essai reste possible quand la configuration est verrouillée (UC-ADM-09), car il ne modifie aucune configuration, comme le test manuel.
+  - **Pendant une session d'édition** : l'essai est celui de la session (aperçu à la demande, UC-ADM-11). Hors session, il suit les deux règles ci-dessus (QO-60).
 - Un secteur ou une étoile indisponible peut être visé ; il joue la séquence quand il est disponible (voir QO-55 pour les ambiances).
 
 ## Scénarios alternatifs
@@ -58,9 +61,6 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 
 - Saisie du rythme : régler à la main chaque durée est long pour un chant comme « Karmine ». Une aide (enregistrer le rythme en le frappant au clavier) est une idée à étudier, hors besoin pour l'instant (ID-12).
 - Plus tard, avec le son : suivre le rythme d'un son (ID-10).
-- **Essai et prise de main (UC-ADM-05)** : proposé que l'essai prenne la main sur les étoiles visées le temps de l'essai (elles sont « en manuel », l'ambiance courante et les réactions ne les touchent pas) puis les rende à la fin (UC-ADM-06), pour éviter deux sources de commande sur les mêmes étoiles.
-- **Essai et verrou (UC-ADM-09)** : proposé que l'essai reste possible quand la configuration est verrouillée, car il ne modifie aucune configuration (comme le test manuel).
-- **Essai pendant une session d'édition** : proposé que, pendant l'édition d'une séquence, l'essai soit celui de la session (aperçu à la demande) ; en dehors d'une session, il suit les deux points ci-dessus (QO-60).
 
 ## Questions liées
 
