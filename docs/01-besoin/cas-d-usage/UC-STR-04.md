@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer interdit ou autorise un type d'événement, ou utilise « tout interdire » / « tout autoriser ». |
 | **Préconditions** | Starlight est en mode Stream. |
 
+Schéma : [UC-STR-04.drawio.svg](UC-STR-04.drawio.svg).
+
 ## Principe
 
 - Chaque type d'événement connu de Starlight (voir UC-ADM-07) a un **interrupteur** : autorisé ou interdit. Exemples : follow, abonnement, bits, raid, et **chaque récompense de points de chaîne** (une récompense est un type d'événement).
@@ -16,6 +18,7 @@
 - Exemple : ne garder que les abonnements et les bits, en interdisant le reste.
 - Un interrupteur ne modifie pas l'association événement → réaction (UC-ADM-07) : elle est conservée et redevient active à l'autorisation.
 - L'interdiction est une **option du mode Stream**, pas un mode (voir QO-41).
+- **Avant le début du live** : toutes les récompenses de points de chaîne sont mises en pause automatiquement dès l'entrée en mode Stream (UC-SYS-02), puis remises en service au début du live (UC-STR-06), sauf celles que le Streamer a interdites par son interrupteur. Ce blocage est distinct des interrupteurs : il ne les modifie pas. Les autres types ne sont pas concernés.
 
 ## Scénario nominal : interdire un type
 
@@ -37,7 +40,7 @@
 
 Les interrupteurs restent tels quels d'un live à l'autre : rien n'est réinitialisé automatiquement.
 
-À l'entrée en mode Stream, la régie du Streamer affiche un **récapitulatif** : la liste de tous les types d'événements avec leur état (autorisé ou interdit), les types interdits étant mis en évidence. Depuis ce récapitulatif, le Streamer peut modifier chaque interrupteur ou utiliser « tout autoriser ».
+À l'entrée en mode Stream, la régie du Streamer affiche un **récapitulatif** : la liste de tous les types d'événements avec leur état (autorisé ou interdit), les types interdits étant mis en évidence, ainsi que l'**état du verrou de configuration** (UC-ADM-09), avec une alerte persistante tant que la configuration est déverrouillée (QO-59). Depuis ce récapitulatif, le Streamer peut modifier chaque interrupteur ou utiliser « tout autoriser ».
 
 - L'affichage est **non bloquant** : il n'empêche ni les ambiances, ni les réactions manuelles, et les événements sont traités selon l'état enregistré sans attendre.
 - La **confirmation est obligatoire** : le récapitulatif reste affiché, avec une alerte persistante, tant que le Streamer n'a pas confirmé (« j'ai vu l'état »). La confirmation est consignée dans le journal (acteur, moment).

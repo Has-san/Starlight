@@ -1,6 +1,6 @@
 # UC-ADM-04 : Gérer les séquences (créer, modifier, supprimer)
 
-*Statut : brouillon, à valider.*
+*Statut : validé.*
 
 | Champ | Contenu |
 |---|---|
@@ -8,6 +8,8 @@
 | **Objectif** | Créer ses propres séquences (clignotements, fondus, enchaînements) pour les utiliser dans des ambiances et des réactions. |
 | **Déclencheur** | L'Administrateur ouvre la configuration des séquences. |
 | **Préconditions** | En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). En mode Lounge, aucune condition. |
+
+Schéma : [UC-ADM-04.drawio.svg](UC-ADM-04.drawio.svg).
 
 ## Vocabulaire
 
@@ -37,7 +39,10 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 - Les séquences sont éditées par aperçu, puis validation ou annulation (UC-ADM-11).
 - **Une séquence en boucle est durable** : elle sert aux ambiances, jamais aux réactions, qui sont temporaires.
 - **Une séquence utilisée dans une réaction est jouée une fois** et sa durée respecte la durée maximale d'une réaction (environ 10 secondes, voir QO-25). Cette durée est vérifiée à la validation de la séquence et de la réaction (UC-ADM-12).
-- **Essai explicite** : l'Administrateur peut jouer une séquence sur une étoile ou un secteur de son choix, hors périmètre du mode, même si l'aperçu est désactivé. L'essai s'arrête à la fin de la séquence, à la durée maximale pour une boucle, ou quand l'Administrateur l'arrête.
+- **Essai explicite** : l'Administrateur peut jouer une séquence sur une étoile ou un secteur de son choix, hors des secteurs du mode, même si l'aperçu est désactivé. L'essai s'arrête à la fin de la séquence, à la durée maximale pour une boucle, ou quand l'Administrateur l'arrête.
+  - **Prise de main** : l'essai prend la main sur les étoiles visées le temps de l'essai (elles sont « en manuel », UC-ADM-05) ; l'ambiance courante et les réactions ne les touchent pas. Elles sont rendues à la fin de l'essai (UC-ADM-06).
+  - **Verrou** : l'essai reste possible quand la configuration est verrouillée (UC-ADM-09), car il ne modifie aucune configuration, comme le test manuel.
+  - **Pendant une session d'édition** : l'essai est celui de la session (aperçu à la demande, UC-ADM-11). Hors session, il suit les deux règles ci-dessus (QO-60).
 - Un secteur ou une étoile indisponible peut être visé ; il joue la séquence quand il est disponible (voir QO-55 pour les ambiances).
 
 ## Scénarios alternatifs
@@ -56,9 +61,9 @@ Exemple : « Karmine », une suite d'allumages bleus et blancs de durées variab
 
 ## Points non tranchés
 
-- Saisie du rythme : régler à la main chaque durée est long pour un chant comme « Karmine ». Une aide (par exemple enregistrer le rythme en le frappant) est une idée à étudier, hors besoin pour l'instant.
+- Saisie du rythme : régler à la main chaque durée est long pour un chant comme « Karmine ». Une aide (enregistrer le rythme en le frappant au clavier) est une idée à étudier, hors besoin pour l'instant (ID-12).
 - Plus tard, avec le son : suivre le rythme d'un son (ID-10).
 
 ## Questions liées
 
-QO-02, QO-08, QO-10, QO-25, QO-46, QO-47, QO-52, QO-55
+QO-02, QO-08, QO-10, QO-25, QO-46, QO-47, QO-52, QO-55, QO-60

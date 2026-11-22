@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer demande l'une des trois actions : vider la file, arrêter la réaction en cours, ou utiliser le bouton OFF. |
 | **Préconditions** | Starlight est en mode Stream. |
 
+Schéma : [UC-STR-03.drawio.svg](UC-STR-03.drawio.svg).
+
 ## Les trois demandes
 
 | Demande | Effet |

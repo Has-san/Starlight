@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Convive demande l'extinction via un actionneur (voir QO-11). |
 | **Préconditions** | Starlight est en mode Lounge. |
 
+Schéma : [UC-CON-02.drawio.svg](UC-CON-02.drawio.svg).
+
 ## Scénario nominal
 
 1. Le Convive demande l'extinction.

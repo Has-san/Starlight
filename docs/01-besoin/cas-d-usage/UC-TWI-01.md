@@ -9,6 +9,8 @@
 | **Déclencheur** | Twitch émet un événement (abonnement, don, raid…). |
 | **Préconditions** | Starlight est en mode Stream. Les événements Twitch ne sont pas interdits par le Streamer (voir UC-STR-04). Starlight est connecté à Twitch. L'Administrateur a associé une réaction au type de l'événement (voir UC-ADM-07). |
 
+Schéma : [UC-TWI-01.drawio.svg](UC-TWI-01.drawio.svg).
+
 ## Scénario nominal
 
 1. Twitch émet un événement.

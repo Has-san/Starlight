@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Convive sélectionne une ambiance via un actionneur (bouton poussoir, téléphone, télécommande : à définir, voir QO-11). |
 | **Préconditions** | Starlight est en mode Lounge. |
 
+Schéma : [UC-CON-01.drawio.svg](UC-CON-01.drawio.svg).
+
 ## Scénario nominal
 
 1. Le Convive sélectionne une ambiance disponible.
@@ -19,7 +21,7 @@
 ## Scénarios alternatifs
 
 - **A1, mode Stream actif** : la demande est ignorée, le Convive ne peut pas agir en mode Stream.
-- **A2, ambiance déjà active** : aucun changement.
+- **A2, ambiance déjà active** : aucun changement, sauf pendant l'économie d'énergie (UC-SYS-01) : la demande rallume les étoiles.
 - **A3, étoile injoignable** : les autres étoiles appliquent l'ambiance, la défaillance est signalée (voir QO-14).
 - **A4, étoiles éteintes par l'économie d'énergie** : la demande réactive les étoiles avec l'ambiance sélectionnée.
 
