@@ -41,7 +41,7 @@ Schéma : [UC-SYS-02.drawio.svg](UC-SYS-02.drawio.svg).
 - **A3, étoile en manuel** : non touchée, elle reste dans son effet.
 - **A4, étoile injoignable** : les autres étoiles s'allument, la défaillance est consignée (QO-14).
 - **A5, régie fermée** : le récapitulatif l'attend ; le journal indique « non confirmé » (UC-STR-04).
-- **A6 bis, passage en Stream pendant la séquence d'extinction** : la séquence est arrêtée (UC-SYS-01, A6) ; l'état mémorisé est l'ambiance courante affichée (QO-67).
+- **A6 bis, passage en Stream pendant la séquence d'extinction** : la séquence est arrêtée (UC-SYS-01, A6) ; l'état mémorisé est l'ambiance courante affichée.
 - **A6, retour en mode Lounge pendant la réaction** : la réaction est arrêtée.
 - **A7, récompense impossible à mettre en pause** : le récapitulatif l'indique par une alerte ; les échanges reçus avant le début du live sont ignorés et consignés (traitement exact : QO-42).
 
