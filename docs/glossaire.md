@@ -8,9 +8,10 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 
 | Terme | Terme anglais (code) | Définition |
 |---|---|---|
-| **Starlight** | `Starlight` | Système complet des étoiles pilotables. |
+| **Starlight** | `Starlight` | Système qui gère la quasi-totalité du besoin : modes, ambiances, séquences, réactions, événements Twitch, configuration, journal (code dans `host/`). Il commande les étoiles par l'intermédiaire de Star Guardian. |
 | **Étoile** | `star` | Source de lumière individuelle et pilotable du système, identifiée de façon unique. Un ruban de LED est une étoile. Les capacités peuvent différer d'une étoile à l'autre : seul le pilote les connaît. L'étoile est annoncée par le pilote, avec un identifiant stable ; l'Administrateur ne la crée ni ne la supprime. |
-| **Pilote** | `driver` | Élément qui commande les étoiles : il connaît leurs capacités et décide comment jouer sur chacune une séquence ou une ambiance. Il ne connaît pas les secteurs : Starlight ne lui transmet que les étoiles concernées. |
+| **Pilote** | `driver` | Élément qui commande les étoiles : il connaît leurs capacités et décide comment jouer sur chacune une séquence ou une ambiance. Il ne connaît pas les secteurs : Starlight ne lui transmet que les étoiles concernées. « Pilote » est le terme générique du rôle ; le système qui l'assure s'appelle Star Guardian. |
+| **Star Guardian** | `star_guardian` | Nom du système qui assure le rôle de pilote des étoiles (code dans `firmware/`) : il annonce les étoiles et leurs capacités, joue les effets et les séquences d'entrée, signale les étoiles indisponibles. Starlight et Star Guardian sont deux systèmes distincts, reliés par une interface. |
 | **Secteur** | `sector` | Groupe prédéfini d'étoiles. Sert à l'Administrateur et au Streamer à désigner plusieurs étoiles d'un coup. Une étoile peut appartenir à plusieurs secteurs ; un secteur ne contient pas d'autre secteur. |
 | **Mode** | `mode` | Manière de fonctionner de Starlight : Lounge ou Stream. Chaque mode a ses **secteurs** : ceux qu'il utilise. Une étoile seule entre dans un mode par un secteur d'une étoile. |
 | **Ambiance** | `ambience` | Configuration des étoiles : pour chaque étoile ou secteur désigné, un état fixe ou une séquence en boucle ; les étoiles non désignées sont éteintes. |
