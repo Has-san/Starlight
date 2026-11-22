@@ -17,6 +17,7 @@ Schéma : [UC-SYS-02.drawio.svg](UC-SYS-02.drawio.svg).
 - **Deux moments distincts** : le passage en mode Stream (ce cas d'usage) et le **début du live**, déclenché à la main par le Streamer (cas d'usage à rédiger, UC-STR-06), qui joue la séquence d'ouverture que voient les spectateurs. Les deux peuvent avoir une réaction différente. Le début du live est un événement du Système ; il lève aussi la mise en pause des récompenses de points de chaîne.
 - **Événements Twitch** : ils sont traités **dès l'activation du mode Stream**, selon les autorisations en vigueur (UC-STR-04), sans attendre le début du live. **Seule exception** : les récompenses de points de chaîne sont mises en pause jusqu'au début du live, pour que personne ne dépense de points avant que le live ne soit visible. Abonnements, bits, raids et follows ne se contrôlent pas en amont (UC-STR-04) : ils sont traités comme d'habitude.
 - **Étoiles hors des secteurs du mode Stream** : elles **s'éteignent** à l'entrée.
+- **État du Lounge mémorisé** : à l'entrée, Starlight mémorise l'état exact du Lounge (ambiance courante, et extinction par l'économie d'énergie le cas échéant) pour le rendre à la sortie (UC-SYS-03). On peut entrer en Stream étoiles éteintes.
 - **Ambiance neutre** : à l'entrée, les secteurs du mode Stream prennent l'**ambiance neutre**, une ambiance comme les autres, **personnalisable** par l'Administrateur (UC-ADM-03) et désignée comme point d'entrée du mode Stream. Si aucune n'est désignée, c'est « Off ».
 - **Réaction au passage en Stream** : une réaction **facultative** peut être associée à l'événement « passage en mode Stream » (UC-ADM-07). C'est une réaction ordinaire (UC-ADM-12), qui se joue sur la base neutre ; à sa fin, les étoiles reviennent à l'ambiance neutre.
 - **Récapitulatif** : la régie du Streamer affiche le récapitulatif des autorisations et l'état du verrou de configuration, avec confirmation obligatoire (UC-STR-04, UC-ADM-09). Le récapitulatif s'affiche avant tout événement traité, ce qui permet de le confirmer avant le live.
@@ -24,7 +25,7 @@ Schéma : [UC-SYS-02.drawio.svg](UC-SYS-02.drawio.svg).
 
 ## Scénario nominal
 
-1. Starlight passe en mode Stream.
+1. Starlight passe en mode Stream et mémorise l'état du Lounge.
 2. Le Système applique l'ambiance neutre aux étoiles des secteurs du mode Stream (UC-ADM-10, UC-STR-05) et éteint les autres étoiles.
 3. Le Système met en pause les récompenses de points de chaîne (QO-42), jusqu'au début du live.
 4. Si une réaction est associée au passage en mode Stream, le Système la joue.
@@ -40,6 +41,7 @@ Schéma : [UC-SYS-02.drawio.svg](UC-SYS-02.drawio.svg).
 - **A3, étoile en manuel** : non touchée, elle reste dans son effet.
 - **A4, étoile injoignable** : les autres étoiles s'allument, la défaillance est consignée (QO-14).
 - **A5, régie fermée** : le récapitulatif l'attend ; le journal indique « non confirmé » (UC-STR-04).
+- **A6 bis, passage en Stream pendant la séquence d'extinction** : la séquence est arrêtée (UC-SYS-01, A6) ; l'état mémorisé est l'ambiance courante affichée (QO-67).
 - **A6, retour en mode Lounge pendant la réaction** : la réaction est arrêtée.
 - **A7, récompense impossible à mettre en pause** : le récapitulatif l'indique par une alerte ; les échanges reçus avant le début du live sont ignorés et consignés (traitement exact : QO-42).
 

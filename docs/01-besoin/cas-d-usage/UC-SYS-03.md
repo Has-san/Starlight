@@ -13,12 +13,12 @@ Schéma : [UC-SYS-03.drawio.svg](UC-SYS-03.drawio.svg).
 
 ## Principe
 
-- **État d'arrivée** : les étoiles des secteurs du mode Lounge reprennent la **dernière ambiance du Lounge**, mémorisée à l'entrée en Stream (UC-SYS-02). Si elle a été supprimée entre-temps, ou si le Lounge était sur « Off », les étoiles passent à « Off ».
+- **État d'arrivée** : les étoiles des secteurs du mode Lounge retrouvent l'**état exact du Lounge**, mémorisé à l'entrée en Stream (UC-SYS-02) : l'ambiance courante affichée, ou l'extinction par l'économie d'énergie (ambiance courante conservée ; une demande d'un Convive rallume, UC-SYS-01). Si l'ambiance a été supprimée entre-temps, ou si le Lounge était sur « Off », les étoiles passent à « Off ».
 - **Étoiles hors des secteurs du Lounge** : elles s'éteignent, comme à l'entrée en Stream.
 - **Réaction et file** : la réaction en cours est arrêtée et la file est vidée, avec une trace dans le journal. Les événements Twitch ne sont plus traités en mode Lounge.
 - **Récompenses de points de chaîne** : elles sont en pause (elles le sont depuis la fin du live, ou depuis l'entrée en Stream si le live n'a jamais commencé). Si ce n'est pas le cas, le Système les met en pause.
 - **Étoiles en manuel** (UC-ADM-05) : non touchées. Le délai de libération automatique repart de zéro.
-- **Économie d'énergie** (UC-SYS-01) : elle redémarre, la temporisation repart de zéro.
+- **Économie d'énergie** (UC-SYS-01) : elle redémarre, la temporisation repart de zéro (pas de décompte si les étoiles sont déjà éteintes).
 - Pas de réaction associée à la sortie du Stream : seul le début et la fin du live ont un événement du Système.
 
 ## Scénario nominal
@@ -26,7 +26,7 @@ Schéma : [UC-SYS-03.drawio.svg](UC-SYS-03.drawio.svg).
 1. Starlight passe en mode Lounge.
 2. Le Système arrête la réaction en cours et vide la file.
 3. Le Système vérifie que les récompenses de points de chaîne sont en pause, et les met en pause sinon.
-4. Le Système applique aux étoiles des secteurs du mode Lounge la dernière ambiance du Lounge, et éteint les autres étoiles.
+4. Le Système applique aux étoiles des secteurs du mode Lounge l'état du Lounge mémorisé à l'entrée, et éteint les autres étoiles.
 5. Starlight consigne dans le journal : acteur « Système », motif « sortie du mode Stream ».
 6. Les Convives peuvent de nouveau demander une ambiance ou l'extinction (UC-CON-01, UC-CON-02).
 
@@ -34,6 +34,7 @@ Schéma : [UC-SYS-03.drawio.svg](UC-SYS-03.drawio.svg).
 
 - **A1, dernière ambiance du Lounge supprimée** : les étoiles passent à « Off ».
 - **A2, Lounge sur « Off » avant le Stream** : les étoiles passent à « Off ».
+- **A2 bis, Lounge éteint par l'économie d'énergie avant le Stream** : les étoiles restent éteintes, l'ambiance courante est conservée, et une demande d'un Convive les rallume.
 - **A3, étoile en manuel** : non touchée, elle reste dans son effet.
 - **A4, étoile injoignable** : les autres étoiles reprennent leur état, la défaillance est consignée (QO-14).
 - **A5, récompense impossible à mettre en pause** : alerte dans la régie, consignée dans le journal (QO-42).
@@ -41,7 +42,7 @@ Schéma : [UC-SYS-03.drawio.svg](UC-SYS-03.drawio.svg).
 
 ## Postconditions
 
-- Starlight est en mode Lounge ; les étoiles du Lounge ont repris la dernière ambiance, les autres sont éteintes.
+- Starlight est en mode Lounge ; les étoiles du Lounge ont retrouvé l'état mémorisé à l'entrée, les autres sont éteintes.
 - La file est vide, les récompenses sont en pause.
 - Le journal indique l'acteur « Système » et le motif.
 
