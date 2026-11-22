@@ -22,6 +22,13 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 | **Essai** | `trial` | Action volontaire de l'Administrateur qui joue une séquence sur une étoile ou un secteur de son choix, à la demande (UC-ADM-04). Diffère de l'aperçu, qui est automatique. |
 | **Événement** | `event` | Déclencheur qui entraîne une réaction : événement extérieur (Twitch) ou **événement du Système** (passage en mode Stream, début du live, fin du live). |
 | **Réaction** | `reaction` | État temporaire déclenché par un événement, par le Streamer ou par l'Administrateur. Composée par l'Administrateur d'une ou plusieurs séquences ou ambiances, sous un nom (par exemple « Karmine »). |
+| **Événement du Système** | `system_event` | Événement interne à Starlight, auquel l'Administrateur peut associer une réaction : passage en mode Stream (UC-SYS-02), début du live (UC-STR-06), fin du live (UC-STR-07). |
+| **Début du live** | `live_start` | Moment où le Streamer déclare, à la main, que les spectateurs voient le live. Joue la séquence d'ouverture (réaction associée) et remet en service les récompenses de points de chaîne (UC-STR-06). |
+| **Fin du live** | `live_end` | Moment où le Streamer termine le live, à la main (une alerte le lui propose si Twitch signale le live hors ligne). Remet les récompenses de points de chaîne en pause (UC-STR-07). Distincte de la sortie du mode Stream. |
+| **Ambiance neutre** | `neutral_ambience` | Ambiance du mode Stream, personnalisable, appliquée à l'entrée en mode Stream. « Off » si aucune n'est désignée (UC-SYS-02). |
+| **Étoile en manuel** | `manual_hold` | État d'une étoile (ou d'un secteur) dont l'Administrateur a pris la main : les ambiances et les réactions ne la touchent plus, et elle ignore les secteurs du mode, jusqu'à ce qu'il rende la main ou que la libération automatique ait lieu (UC-ADM-05, UC-ADM-06). |
+| **Verrou de configuration** | `config_lock` | Protection du mode Stream : verrouillé, il empêche toute modification de la configuration. Verrouillé par défaut, conservé d'un live à l'autre (UC-ADM-09). |
+| **Récapitulatif** | `start_recap` | Affichage de la régie à l'entrée en mode Stream : état des interrupteurs d'événements et du verrou, avec confirmation obligatoire du Streamer (UC-STR-04, UC-ADM-09). |
 
 ## Règles de comportement
 
