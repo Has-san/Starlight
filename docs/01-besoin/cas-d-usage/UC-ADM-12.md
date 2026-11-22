@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur ouvre la configuration des réactions. |
 | **Préconditions** | En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). En mode Lounge, aucune condition. |
 
+Schéma : [UC-ADM-12.drawio.svg](UC-ADM-12.drawio.svg).
+
 ## Ce qu'est une réaction
 
 - Un **nom**, choisi par l'Administrateur et unique.

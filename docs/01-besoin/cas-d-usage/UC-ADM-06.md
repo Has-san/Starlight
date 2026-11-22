@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur demande de rendre la main : sur toutes les étoiles en manuel, ou sur des étoiles ou des secteurs choisis. |
 | **Préconditions** | Au moins une étoile est en manuel. |
 
+Schéma : [UC-ADM-06.drawio.svg](UC-ADM-06.drawio.svg).
+
 ## Principe
 
 - Rendre la main est l'inverse de UC-ADM-05. Ce n'est pas de la configuration : ni aperçu ni validation, et le verrou de UC-ADM-09 ne l'empêche pas.

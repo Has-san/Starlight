@@ -9,6 +9,8 @@
 | **Déclencheur** | Le délai d'inactivité est écoulé. |
 | **Préconditions** | Starlight est en mode Lounge. L'économie d'énergie est activée. L'ambiance courante n'est pas marquée « ne jamais éteindre automatiquement ». |
 
+Schéma : [UC-SYS-01.drawio.svg](UC-SYS-01.drawio.svg).
+
 ## Principe
 
 - **Inactivité** : sans capteur de présence, c'est le temps écoulé depuis la dernière demande d'un Convive (ambiance, extinction). Toute demande remet la temporisation à zéro.

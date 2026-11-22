@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer demande le changement de mode depuis sa régie. |
 | **Préconditions** | Aucune, hors cas refusés ci-dessous. |
 
+Schéma : [UC-STR-08.drawio.svg](UC-STR-08.drawio.svg).
+
 ## Principe
 
 - Le changement de mode est **toujours manuel**. Il n'est pas déclenché par l'ouverture d'OBS, qui peut servir à autre chose que streamer.

@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur ouvre la configuration des séquences. |
 | **Préconditions** | En mode Stream, la configuration n'est pas verrouillée (voir UC-ADM-09). En mode Lounge, aucune condition. |
 
+Schéma : [UC-ADM-04.drawio.svg](UC-ADM-04.drawio.svg).
+
 ## Vocabulaire
 
 - **Effet** : ce que le pilote sait jouer sur une étoile, avec ses paramètres. Exemples : allumer en une couleur et une intensité, éteindre, passer progressivement d'une couleur à une autre. C'est la brique de base d'une étape. 

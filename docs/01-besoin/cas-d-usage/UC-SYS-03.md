@@ -9,6 +9,8 @@
 | **Déclencheur** | Starlight passe du mode Stream au mode Lounge, par une demande manuelle (UC-STR-08) ou par la coupure automatique après une alerte de fin de live (UC-STR-07). |
 | **Préconditions** | Aucun live n'est en cours : il est terminé ou n'a jamais commencé. |
 
+Schéma : [UC-SYS-03.drawio.svg](UC-SYS-03.drawio.svg).
+
 ## Principe
 
 - **État d'arrivée** : les étoiles des secteurs du mode Lounge reprennent la **dernière ambiance du Lounge**, mémorisée à l'entrée en Stream (UC-SYS-02). Si elle a été supprimée entre-temps, ou si le Lounge était sur « Off », les étoiles passent à « Off ».

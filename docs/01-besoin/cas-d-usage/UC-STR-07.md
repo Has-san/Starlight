@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer demande la fin du live depuis sa régie, ou accepte la proposition de l'alerte de fin de live. |
 | **Préconditions** | Starlight est en mode Stream. Le live a commencé (UC-STR-06) et n'est pas terminé. |
 
+Schéma : [UC-STR-07.drawio.svg](UC-STR-07.drawio.svg).
+
 ## Principe
 
 - La fin du live est **manuelle** : une fin de live ne se distingue pas sûrement d'une coupure de connexion. Starlight n'agit seul qu'après une alerte restée sans réponse (voir « Alerte de fin de live et coupure automatique »).

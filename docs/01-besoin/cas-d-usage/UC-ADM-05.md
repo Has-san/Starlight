@@ -9,6 +9,8 @@
 | **Déclencheur** | L'Administrateur sélectionne des étoiles ou des secteurs et commande un effet. |
 | **Préconditions** | Aucune : possible en mode Lounge comme en mode Stream. |
 
+Schéma : [UC-ADM-05.drawio.svg](UC-ADM-05.drawio.svg).
+
 ## Principe
 
 - Commander une étoile ou un secteur est une **prise de main** : ces étoiles sont dites **en manuel**. Ni les changements d'ambiance ni les réactions ne les touchent tant qu'elles le restent.

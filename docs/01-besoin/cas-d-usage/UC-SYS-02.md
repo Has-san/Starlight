@@ -9,6 +9,8 @@
 | **Déclencheur** | Starlight passe du mode Lounge au mode Stream. |
 | **Préconditions** | Aucune session d'édition en cours (sinon elle est traitée avant le changement de mode, UC-ADM-11). |
 
+Schéma : [UC-SYS-02.drawio.svg](UC-SYS-02.drawio.svg).
+
 ## Principe
 
 - **Moment** : le passage en mode Stream a lieu typiquement à l'ouverture d'OBS. Le live n'a pas forcément commencé : **seul le Streamer voit les étoiles**.

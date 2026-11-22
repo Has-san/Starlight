@@ -9,6 +9,8 @@
 | **Déclencheur** | Le Streamer demande le début du live depuis sa régie. |
 | **Préconditions** | Starlight est en mode Stream (UC-SYS-02). Le live n'a pas déjà commencé, ou il a été terminé (UC-STR-07). |
 
+Schéma : [UC-STR-06.drawio.svg](UC-STR-06.drawio.svg).
+
 ## Principe
 
 - Le début du live est **manuel** : il a lieu quand le Streamer quitte sa scène d'attente, au moment où les spectateurs commencent à voir le live.
