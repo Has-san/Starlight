@@ -37,7 +37,7 @@ Schéma : [UC-ADM-03.drawio.svg](UC-ADM-03.drawio.svg).
 
 - Les ambiances sont éditées par aperçu, puis validation ou annulation (UC-ADM-11).
 - À la fin d'une réaction, l'ambiance courante reprend. Si elle contient une séquence en boucle, celle-ci **redémarre** depuis le début (proposé).
-- La séquence d'entrée d'une ambiance (ID-09) est interne au pilote : elle n'est pas configurée ici.
+- L'effet d'apparition d'une ambiance (ID-09) est interne au pilote : elle n'est pas configurée ici.
 
 ## Scénarios alternatifs
 
