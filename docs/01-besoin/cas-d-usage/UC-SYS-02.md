@@ -4,7 +4,7 @@
 
 | Champ | Contenu |
 |---|---|
-| **Acteur principal** | Système |
+| **Acteur principal** | Aucun : comportement automatique du système, déclenché par le temps ou par un changement de mode |
 | **Objectif** | Préparer les étoiles et la régie quand Starlight passe en mode Stream, et lancer le traitement des événements Twitch. |
 | **Déclencheur** | Starlight passe du mode Lounge au mode Stream. |
 | **Préconditions** | Aucune session d'édition en cours (sinon elle est traitée avant le changement de mode, UC-ADM-11). |

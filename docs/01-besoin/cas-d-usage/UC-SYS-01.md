@@ -4,7 +4,7 @@
 
 | Champ | Contenu |
 |---|---|
-| **Acteur principal** | Système |
+| **Acteur principal** | Aucun : comportement automatique du système, déclenché par le temps ou par un changement de mode |
 | **Objectif** | Éteindre progressivement les étoiles quand personne n'intervient, pour économiser l'énergie. |
 | **Déclencheur** | Le délai d'inactivité est écoulé. |
 | **Préconditions** | Starlight est en mode Lounge. L'économie d'énergie est activée. L'ambiance courante n'est pas marquée « ne jamais éteindre automatiquement ». |

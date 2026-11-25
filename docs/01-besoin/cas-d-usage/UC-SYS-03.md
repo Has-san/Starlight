@@ -4,7 +4,7 @@
 
 | Champ | Contenu |
 |---|---|
-| **Acteur principal** | Système |
+| **Acteur principal** | Aucun : comportement automatique du système, déclenché par le temps ou par un changement de mode |
 | **Objectif** | Remettre les étoiles dans l'état du mode Lounge quand Starlight quitte le mode Stream. |
 | **Déclencheur** | Starlight passe du mode Stream au mode Lounge, par une demande manuelle (UC-STR-08) ou par la coupure automatique après une alerte de fin de live (UC-STR-07). |
 | **Préconditions** | Aucun live n'est en cours : il est terminé ou n'a jamais commencé. |

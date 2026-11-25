@@ -1,7 +1,7 @@
 # Inventaire des cas d'usage
 
 Un fichier par cas d'usage, nommé par son identifiant. Format : `UC-<rôle>-<numéro>`, où le rôle est celui de l'acteur principal ([acteurs](../acteurs.md)) :
-`CON` Convive, `STR` Streamer, `TWI` Twitch, `ADM` Administrateur, `SYS` Système.
+`CON` Convive, `STR` Streamer, `TWI` Twitch, `ADM` Administrateur, `SYS` comportements automatiques du système (pas d'acteur principal).
 
 Les identifiants sont stables : un numéro n'est jamais réutilisé.
 
@@ -34,4 +34,4 @@ Les identifiants sont stables : un numéro n'est jamais réutilisé.
 | [UC-STR-08](UC-STR-08.md) | Changer de mode (Lounge ↔ Stream) | Validé |
 | [UC-SYS-03](UC-SYS-03.md) | Sortie du mode Stream (retour en Lounge) | Validé |
 
-Les comportements du Système sont décrits comme des cas d'usage dont l'acteur est le Système (déclenchement par le temps ou par un changement de mode).
+Les comportements automatiques du système sont décrits comme des cas d'usage sans acteur principal (déclenchement par le temps ou par un changement de mode).

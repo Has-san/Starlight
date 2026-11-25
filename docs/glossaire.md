@@ -49,7 +49,7 @@ La documentation est en français, le code en anglais (QO-21) : la colonne « Te
 
 ## Rôles
 
-Les rôles (Convive, Streamer, Twitch, Administrateur, Système) et leurs droits sont décrits dans [`01-besoin/acteurs.md`](01-besoin/acteurs.md).
+Les rôles (Convive, Streamer, Twitch, Administrateur) et leurs droits sont décrits dans [`01-besoin/acteurs.md`](01-besoin/acteurs.md).
 
 | Rôle | Terme anglais (code) |
 |---|---|
@@ -57,7 +57,7 @@ Les rôles (Convive, Streamer, Twitch, Administrateur, Système) et leurs droits
 | Streamer | `streamer` |
 | Twitch | `twitch` |
 | Administrateur | `admin` |
-| Système | `system` |
+| Système (système complet : auteur d'une action automatique au journal ; pas un acteur) | `system` |
 
 ## Autres termes du code
 
